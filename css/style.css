@@ -1,85 +1,6 @@
 /* css reset */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -94,86 +15,131 @@ video {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: 1px solid black;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-@media screen and (max-device-width: 767px) {
-  body{
-  }
+a {
+  text-decoration: none;
+  color: black;
+}
 
- 
-  
-  .black-navbar, .white-navbar{
+@media screen and (max-device-width: 767px) {
+  .black-navbar, .white-navbar {
     display: none;
   }
-
-  .navbar-mobile{
-   display: flex;
-   justify-content: space-between;
+  .navbar-mobile {
+    display: flex;
+    justify-content: space-between;
     height: 48px;
   }
-  .navbar-mobile a{
+  .navbar-mobile a {
     border: 1px solid black;
     width: 106px;
   }
-  .navbar-mobile ul{
+  .navbar-mobile ul {
     width: 96px;
     display: flex;
     margin-right: 9px;
   }
-  .navbar-mobile li{
+  .navbar-mobile li {
     width: 50%;
     border-left: 1px solid #c2c2c2;
   }
-
-  .spacer{
+  .spacer {
     height: 60px;
-     font-size: 14px; /* check font-size responsiveness */
+    font-size: 14px;
+    /* check font-size responsiveness */
     background-color: rgb(255, 205, 41);
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  .fixed{
+  .fixed {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 2;
     background-color: white;
   }
-
-  .insights{
+  /* INSIGHTS */
+  .insights {
     display: flex;
     flex-direction: column;
     padding: 4px;
     margin-top: 106px;
   }
-  .insights li{
+  .insights li {
     border: 1px solid blue;
     width: 100%;
     min-height: 30vh;
     margin-bottom: 10px;
   }
-
-
-
-
-
-
-
-
-
-
-
+  main {
+    margin: 0 auto;
+    max-width: 1192px;
+    padding: 0 20px;
+  }
+  /* Latest news */
+  .latest-news a {
+    font-size: 28px;
+    color: #f42;
+  }
+  .latest-news ul {
+    margin: 20px -8px -8px -8px;
+  }
+  .latest-news li {
+    height: 88px;
+    border: 1px solid red;
+  }
+  /* index Co */
+  .indexCo {
+    margin-top: 20px;
+  }
+  .indexCo h2 a {
+    font-size: 28px;
+    color: #f42;
+  }
+  .indexCo h3 {
+    margin-top: 10px;
+  }
+  .indexCo h3 a {
+    font-size: 14px;
+    color: #f42;
+  }
+  .indexCo ul {
+    border: 1px solid pink;
+  }
+  .indexCo li {
+    height: 200px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+  }
+  /* MAIN ARTICLES */
+  .main-articles li {
+    height: 749px;
+    border: 1px solid green;
+  }
+  /* Latest deals */
+  .latest-deals a {
+    font-size: 28px;
+    color: #f42;
+  }
+  .latest-deals ul {
+    margin: 20px -8px -8px -8px;
+  }
+  .latest-deals li {
+    height: 88px;
+    border: 1px solid red;
+  }
 }
