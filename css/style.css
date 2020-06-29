@@ -101,3 +101,67 @@ video {
     background-color: red;
   }
 }
+
+footer {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.links {
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+.icons-container, .social-container {
+  display: flex;
+  justify-content: center;
+}
+
+.icons-container li {
+  min-width: 40px;
+  min-height: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #333333;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-container li:hover {
+  background: transparent;
+  border: 3px solid #333333;
+}
+
+.icons-container i {
+  color: white;
+}
+
+.links li, .links a {
+  list-style-type: none;
+  color: #AAA;
+  text-decoration: none; 
+}
+
+.social-container li {
+  margin: 1rem;
+}
+
+.social-container a:hover {
+  color: white;
+}
+
+.footer-text {
+  color: #AAA;
+  background-color: #000000;
+  padding: 3rem;
+}
+
+.footer-img {
+  width: 3em;
+}
