@@ -115,8 +115,7 @@ a {
     background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/cc_series_empty-1200x628.jpg);
   }
   .insights li:nth-child(3){
-    background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2
-    020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
+    background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
   }
 
   .insights h5 a{
@@ -327,6 +326,7 @@ footer {
 .icons-container, .social-container {
   display: flex;
   justify-content: center;
+  font-size: 14px;
 }
 
 .icons-container li {
