@@ -82,6 +82,32 @@ a {
   height: 100%;
 }
 
+.transform i{
+  color:  rgba(80, 80, 80, .3); 
+    transform: scaleX(-1);
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.transform li:nth-child(3){
+  color:  #555555; 
+    font-size: 12px;
+}
+.transform li:nth-child(4) a{
+  color:  #f42; 
+    font-size: 20px;
+}
+.transform li:nth-child(5) a{
+  background-color:  #00cccc; 
+  border-radius: 2px;
+  line-height: 28px;
+  padding:8px 12px;
+  font-size: 11px;
+  color: white;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
 .spacer {
   height: 30px;
   font-size: 14px;
@@ -89,7 +115,7 @@ a {
   display: flex;
   padding-left: 17px;
   align-items: center;
-  
+  margin-bottom: 1px;
 }
 
 .insights {
