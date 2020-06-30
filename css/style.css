@@ -44,8 +44,18 @@ a {
     height: 48px;
   }
   .navbar-mobile a {
-    border: 1px solid black;
     width: 106px;
+    background-color: #f42;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-mobile img{
+    display: block;
+    height: 16px;
+    position: relative;
+    width: 66px;
   }
   .navbar-mobile ul {
     width: 96px;
@@ -54,7 +64,20 @@ a {
   }
   .navbar-mobile li {
     width: 50%;
-    border-left: 1px solid #c2c2c2;
+    border-left: 1px solid rgba(80, 80, 80, .1);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-mobile ul li:nth-child(1) i{    
+    color:  rgba(80, 80, 80, .3); 
+    transform: scaleX(-1); 
+  
+  }
+  .navbar-mobile ul li:nth-child(2){
+    color: #f42;
+    font-size: 20px;
+  
   }
   .spacer {
     height: 60px;
