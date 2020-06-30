@@ -33,13 +33,64 @@ a {
   color: black;
 }
  /* START OF NON-MEDIA QUERIE */
+
+.navbar-mobile{
+  display: none;
+}
+
 .black-navbar{
-  
+  height: 32px;
+  background-color: #131313;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
 }
 
 
+.black-navbar li{
+  display: inline;
+  margin-left: 12px;
+}
 
+.black-navbar li a{
+  color: rgb(255,255,255,0.6);
+  font-size:13px;
+}
 
+.white-navbar{
+  height: 48px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.white-navbar li{
+  display: inline;
+}
+
+.white-navbar li a{
+  color: #aaa;
+  font-size:14px;
+  padding-left: 12px;
+}
+.transform{
+  display: flex;
+  align-items: center;
+  border-left: 1px solid rgba(80, 80, 80, .1);  
+  height: 100%;
+}
+
+.spacer {
+  height: 30px;
+  font-size: 14px;
+  background-color: rgb(255, 205, 41);
+  display: flex;
+  padding-left: 17px;
+  align-items: center;
+  
+}
 
 .insights {
   display: grid;
