@@ -115,7 +115,8 @@ a {
     background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/cc_series_empty-1200x628.jpg);
   }
   .insights li:nth-child(3){
-    background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
+    background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2
+    020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
   }
 
   .insights h5 a{
@@ -218,14 +219,79 @@ a {
     font-size: 14px;
     color: #f42;
   }
-  .indexCo ul {
-    border: 1px solid pink;
+  .index-img a{
+    width:60px;
+    height: 60px;
+    background-color: blue;
+    display: block;
+    position: relative;
+  }
+  .index-img{
+    width:60px;
+    height: 60px;
+    background-color: blue;
+    display: block;
+    position: relative;
   }
   .indexCo li {
-    height: 200px;
     border: 1px solid black;
     margin-bottom: 20px;
   }
+  .indexCo h4{
+    background-color: #f42;
+    color: white;
+    font-size: 18px;
+    padding: 10px 16px 10px 84px;  
+    
+  }
+
+  .indexCo h4 img{
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    left:32px;
+
+  }
+
+
+  .indexCo div:nth-child(2){
+    color: #000;
+    background: rgba(255,68,34,.08);
+    padding: 10px 16px 10px 84px;  
+  }
+  .indexCo h6{
+    font-size: 11px;
+    opacity: .5;
+    font-weight: 500;
+    letter-spacing: .04em;
+    line-height: 1.5;
+  }
+  .indexCo div:nth-child(3){
+    color: #000;
+    background: #fffaf8;
+    padding: 16px;
+    }
+  .indexCo div:nth-child(3) span{
+    font-size: 13px;
+    color: #555555;
+    margin-left:5px;
+  }
+  .indexCo div:nth-child(4){
+    background: #fffaf8;
+   
+    padding: 16px;
+    border-top: 1px solid rgba(255,68,34,.25);
+    }
+    .indexCo div:nth-child(4) a{ 
+      font-size: 13px;
+      color: #555555;
+    
+    }
+    
+
+
+
   /* MAIN ARTICLES */
   .main-articles li {
     height: 749px;
