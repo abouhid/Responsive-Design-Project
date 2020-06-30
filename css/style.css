@@ -337,8 +337,9 @@ footer {
     font-size: 28px;
     color: #f42;
    }
-  .news-container div {
-    padding: 3% 8%;
+
+  .news-ul div {
+    padding: 3% 5%;
   }
   
   .latest-news ul{
@@ -347,20 +348,22 @@ footer {
   }
   
   .latest-news li {
-    padding: 8px;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    max-width: 25%;
+    max-width: 24%;
     align-items: center;
+    max-width: 290px;
+    margin: 1%;
   }
   
    .latest-news li span{
-    height: 135px;
-    width: 270px;
+    min-height: 135px;
+    min-width: 270px;
     display: block;
-    background-position: 50%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
   }
   
   .latest-news li:nth-child(1) span{
