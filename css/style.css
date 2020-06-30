@@ -58,16 +58,18 @@ a {
   font-size:13px;
 }
 
-.white-navbar{
+.white-navbar {
   height: 48px;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px;
+  white-space: nowrap;
 }
 .white-navbar li{
   display: inline;
+
 }
 
 .white-navbar li a{
@@ -80,6 +82,8 @@ a {
   align-items: center;
   border-left: 1px solid rgba(80, 80, 80, .1);  
   height: 100%;
+  width: fit-content;
+  justify-content: flex-end;
 }
 
 .transform i{
@@ -88,6 +92,29 @@ a {
     font-size: 16px;
     margin-right: 20px;
 }
+.transform img{
+  width: 110px; 
+  height: 20px;
+}
+
+@media screen and (max-device-width: 1114px){
+.transform li{
+  display: none;
+}
+.transform li:nth-child(1){
+  display: block;
+}
+
+
+}
+
+
+
+@media screen and (max-device-width: 1214px){
+  .white-navbar ul:first-child li:last-child {
+    display:none;
+  }
+  }
 
 .transform li:nth-child(3){
   color:  #555555; 
@@ -116,6 +143,7 @@ a {
   padding-left: 17px;
   align-items: center;
   margin-bottom: 1px;
+  position: sticky;
 }
 
 .insights {
@@ -123,8 +151,7 @@ a {
   grid-template-areas: "a a a b"
   "a a a c";
   grid-gap: 5px;
-  /* padding: 8px;
-  margin-top: 106px; */
+
 }
 .insights li {
   background-size: cover;
@@ -137,7 +164,7 @@ a {
   background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
 }
 .insights li:nth-child(1) h2 a{
-  font-size: 40px;
+  font-size:  100%;
 }
 
 .insights li:nth-child(2){
