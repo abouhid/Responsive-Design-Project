@@ -22,7 +22,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid black;
 }
 
 ul {
@@ -105,7 +104,6 @@ a {
   .insights li {
     background-size: cover;
     background-position: 50%;
-    border: 1px solid blue;
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
@@ -144,17 +142,67 @@ a {
     padding: 0 20px;
   }
   /* Latest news */
-  .latest-news a {
+  .latest-news h2 a {
     font-size: 28px;
     color: #f42;
+   
   }
-  /* .latest-news ul {
-    margin: 20px -8px -8px -8px;
-  } */
+
+  .latest-news ul{
+    margin: 15px -8px -8px -8px;
+    
+  }
+
   .latest-news li {
     height: 88px;
-    border: 1px solid red;
+    padding: 8px;
+    display: flex;
   }
+   .latest-news li span{
+    height:75px;
+    width: 92px;
+    display: block;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+  .latest-news li:nth-child(1) span{
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
+
+  }
+  .latest-news li:nth-child(2) span{
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Screenshot-2020-05-29-at-12.00.49-412x270.png);
+  }
+  .latest-news li:nth-child(3) span{
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png)
+  }
+  .latest-news li:nth-child(4) span{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg)
+  }
+  .latest-news li:nth-child(5) span{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg)
+  }
+  .latest-news li:nth-child(6) span{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png)
+  }
+  .latest-news li:nth-child(7) span{
+  background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg)
+  }
+  .latest-news li:nth-child(8) span{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png)
+  }
+  .latest-news li div{
+    font-size: 14px;
+    margin-left: 15px;
+  }
+
+  .latest-news p,
+  .latest-news p a{
+    margin-top: 10px;
+    color: rgb(80,80,80);
+    font-size: 12px;
+  }
+
   /* index Co */
   .indexCo {
     margin-top: 20px;
