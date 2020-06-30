@@ -331,6 +331,75 @@ footer {
 .footer-img {
   width: 3em;
 }
+/* Desktop Latest news */
+@media screen and (min-device-width: 767px) {
+  .latest-news h2 a {
+    font-size: 28px;
+    color: #f42;
+   }
+  .news-container div {
+    padding: 3% 8%;
+  }
+  
+  .latest-news ul{
+   display: flex;
+   flex-wrap: wrap;  
+  }
+  
+  .latest-news li {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    align-items: center;
+  }
+  
+   .latest-news li span{
+    height: 135px;
+    width: 270px;
+    display: block;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .latest-news li:nth-child(1) span{
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
+  
+  }
+  .latest-news li:nth-child(2) span{
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Screenshot-2020-05-29-at-12.00.49-412x270.png);
+  }
+  .latest-news li:nth-child(3) span{
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png)
+  }
+  .latest-news li:nth-child(4) span{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg)
+  }
+  .latest-news li:nth-child(5) span{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg)
+  }
+  .latest-news li:nth-child(6) span{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png)
+  }
+  .latest-news li:nth-child(7) span{
+  background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg)
+  }
+  .latest-news li:nth-child(8) span{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png)
+  }
+  .latest-news li div{
+    font-size: 14px;
+  }
+  
+  .latest-news p,
+  .latest-news p a{
+    margin-top: 10px;
+    color: rgb(80,80,80);
+    font-size: 12px;
+  }
+}
+
 
 @media screen and (max-device-width: 767px) {
   .black-navbar, .white-navbar {
