@@ -89,6 +89,7 @@ video {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   vertical-align: baseline;
+
 }
 
 * {
@@ -493,6 +494,7 @@ main {
     color: white;
     font-size: 18px;
     padding: 10px 16px 10px 84px; 
+    position: relative;
   }
   
   .indexCo h4 img{
@@ -500,7 +502,7 @@ main {
     height: 60px;
     display: block;
     position: absolute;
-    left:32px;
+    left: 10px;
   
   }
   
@@ -735,7 +737,7 @@ main {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 2;
+    z-index: 99999;
   }
 
   /* INSIGHTS */
@@ -901,6 +903,7 @@ main {
   .indexCo li {
     margin-bottom: 20px;
     display: block;
+    margin-top: 20px;
   }
 
   .indexCo h4 {
@@ -908,6 +911,7 @@ main {
     color: white;
     font-size: 18px;
     padding: 10px 16px 10px 84px;
+    
   }
 
   .indexCo h4 img {
