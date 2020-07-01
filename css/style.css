@@ -17,11 +17,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
+@media screen and (min-device-width: 767px) {
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 2%;
+  margin-top: 15px;
 }
 
 ul {
@@ -32,7 +34,6 @@ a {
   text-decoration: none;
   color: black;
 }
- /* START OF NON-MEDIA QUERIE */
 
 .navbar-mobile{
   display: none;
@@ -97,24 +98,6 @@ a {
   height: 20px;
 }
 
-@media screen and (max-device-width: 1114px){
-.transform li{
-  display: none;
-}
-.transform li:nth-child(1){
-  display: block;
-}
-
-
-}
-
-
-
-@media screen and (max-device-width: 1214px){
-  .white-navbar ul:first-child li:last-child {
-    display:none;
-  }
-  }
 
 .transform li:nth-child(3){
   color:  #555555; 
@@ -148,8 +131,9 @@ a {
 
 .insights {
   display: grid;
-  grid-template-areas: "a a a b"
-  "a a a c";
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "a b"
+  "a c";
   grid-gap: 5px;
 
 }
@@ -164,7 +148,7 @@ a {
   background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
 }
 .insights li:nth-child(1) h2 a{
-  font-size:  100%;
+  font-size:  40px;
 }
 
 .insights li:nth-child(2){
@@ -285,11 +269,6 @@ a {
   width: 1em;
   margin-left: 0;
 }
-
-
-
-
-
 footer {
   text-align: center;
   font-size: 100%;
@@ -359,7 +338,11 @@ footer {
   width: 3em;
 }
 /* Desktop Latest news */
-@media screen and (min-device-width: 767px) {
+
+  .latest-news h2 {
+    margin: 20px auto;
+   }  
+  
   .latest-news h2 a {
     font-size: 28px;
     color: #f42;
@@ -372,6 +355,7 @@ footer {
   .latest-news ul{
    display: flex;
    flex-wrap: wrap;  
+   width: 100%;
   }
   
   .latest-news li {
@@ -380,13 +364,12 @@ footer {
     flex-direction: column;
     max-width: 24%;
     align-items: center;
-    max-width: 290px;
-    margin: 1%;
+    margin-right: 10px;
   }
   
    .latest-news li span{
+     width:100%;
     min-height: 135px;
-    min-width: 270px;
     display: block;
     background-position: center;
     background-repeat: no-repeat;
@@ -428,9 +411,116 @@ footer {
     color: rgb(80,80,80);
     font-size: 12px;
   }
+  .indexCo {
+    margin-top: 20px;
+  }
+  .indexCo h2 a {
+    font-size: 28px;
+    color: #f42;
+  }
+  .indexCo h3 {
+    margin-top: 10px;
+  }
+  .indexCo h3 a {
+    font-size: 14px;
+    color: #f42;
+  }
+  .index-img a{
+    width:60px;
+    height: 60px;
+    background-color: blue;
+    display: block;
+    position: relative;
+  }
+  .index-img{
+    width:60px;
+    height: 60px;
+    background-color: blue;
+    display: block;
+    position: relative;
+  }
+  
+  .indexCo ul {
+    display: flex;
+  }
+  
+  .indexCo li {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  .indexCo h4{
+    background-color: #f42;
+    color: white;
+    font-size: 18px;
+    padding: 10px 16px 10px 84px; 
+  }
+  
+  .indexCo h4 img{
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    left:32px;
+  
+  }
+  
+  .indexCo div:nth-child(2){
+    color: #000;
+    background: rgba(255,68,34,.08);
+    padding: 10px 16px 10px 84px;  
+  }
+  .indexCo h6{
+    font-size: 11px;
+    opacity: .5;
+    font-weight: 500;
+    letter-spacing: .04em;
+    line-height: 1.5;
+  }
+  .indexCo div:nth-child(3){
+    color: #000;
+    background: #fffaf8;
+    padding: 16px;
+    }
+  .indexCo div:nth-child(3) span{
+    font-size: 13px;
+    color: #555555;
+    margin-left:5px;
+  }
+  .indexCo div:nth-child(4){
+    background: #fffaf8;
+   
+    padding: 16px;
+    border-top: 1px solid rgba(255,68,34,.25);
+    }
+    .indexCo div:nth-child(4) a{ 
+      font-size: 13px;
+      color: #555555;
+    }
 }
 
+@media screen and (max-device-width: 1114px){
+  .transform li{
+    display: none;
+  }
+  .transform li:nth-child(1){
+    display: block;
+  }
+}
+  
+  
+  
+  @media screen and (max-device-width: 1214px){
+    .white-navbar ul:first-child li:last-child {
+      display:none;
+    }
+  }
 
+  @media screen and (min-device-width: 1024px) { 
+    .latest-news li {
+        max-width: 23%;
+    }
+  }
+/* START OF MOBILE */
 @media screen and (max-device-width: 767px) {
   .black-navbar, .white-navbar {
     display: none;
@@ -631,7 +721,6 @@ footer {
     position: relative;
   }
   .indexCo li {
-    border: 1px solid black;
     margin-bottom: 20px;
   }
   .indexCo h4{
