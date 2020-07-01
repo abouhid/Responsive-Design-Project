@@ -1049,12 +1049,21 @@ footer {
   margin-top: 20px;
 }
 
-.icons-container,
+.icons-container {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  flex-wrap: wrap;
+  margin: 1.5em auto;
+
+}
+
 .social-container {
   display: flex;
   justify-content: center;
   font-size: 14px;
   flex-wrap: wrap;
+  margin-bottom: 1.5em;
 }
 
 .icons-container li {
@@ -1075,18 +1084,18 @@ footer {
 
 .icons-container i {
   color: white;
+  font-size: 20px;
 }
 
-.links li,
-.links a {
+.links li a {
   list-style-type: none;
   color: #aaa;
   text-decoration: none;
 }
 
 .social-container li {
-  margin: 1rem;
-  font-size: 100%;
+  margin: 10px 6px;
+  font-size: 13px;
 }
 
 .social-container a:hover {
