@@ -109,14 +109,6 @@ a {
   display: block;
 }
 
-.main-articles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  flex-shrink: inherit;
-  padding: 1%;
-  
-}
 
 .img-background {
   background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
@@ -366,10 +358,14 @@ main {
   color: rgb(255, 255, 255, 0.6);
   font-size: 12px;
 }
+.main-articles {
+  display: grid;
+  grid-gap: 1%;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .main-a-container {
   max-width: 368px;
-  margin: auto 5px;
 }
 
 /* Desktop Latest news */
@@ -577,6 +573,12 @@ main {
 
     .indexCo li{
       width: 24%;
+    }
+
+    .main-articles {
+      display: grid;
+      grid-gap: 1%;
+      grid-template-columns: repeat(3, 1fr);
     }
 
   }
@@ -876,7 +878,7 @@ main {
 
 
 @media screen and (min-device-width: 767px) and (max-device-width: 1022px) {
-  /* Medium-size Latest news */
+  /* Medium-size */
 
   .latest-news h2 {
     margin: 20px auto;
@@ -956,6 +958,12 @@ main {
     margin-top: 10px;
     color: rgb(80, 80, 80);
     font-size: 12px;
+  }
+
+  .main-articles {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
