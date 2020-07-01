@@ -115,8 +115,8 @@ a {
   background-repeat: no-repeat;
   background-position: bottom;
   width: 100%;
+  min-height: 276px;
   background-size:cover;
-  margin-top: 20px;
 }
 
 .main-articles .main-a-container:nth-child(1) .img-background {
@@ -155,8 +155,8 @@ a {
   background-image: linear-gradient(to bottom, transparent, black), url("../images/img-9.PNG");
 }
 
-.img-background span {
-  font-size: 14px;
+#popular {
+  font-size: 1.5em;
   color: rgb(250, 245, 236);
   padding-left: 1em;
 }
@@ -177,6 +177,7 @@ a {
   text-decoration: none;
   color: white;
   margin-left: 1em;
+  display: block;
 }
 
 .text-bold:hover {
@@ -184,7 +185,7 @@ a {
 }
 
 .img-background span {
-  padding-top: 50%;
+  padding-top: 30%;
   display: block;
   color: white;
 }
