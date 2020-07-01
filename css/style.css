@@ -108,14 +108,122 @@ a {
 .indexCo li:last-child{
   display: block;
 }
+
+.main-a-container {
+  max-width: 360px;
+}
+
+.main-articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1%;
+}
+
+.img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 99%;
+  margin-top: 20px;
+}
+
+.img-background span {
+  font-size: 14px;
+  color: rgb(250, 245, 236);
+  padding: 3%;
+}
+
+.author-span {
+  color: rgb(250, 245, 236);
+  text-decoration: none;
+}
+
+.author-span:hover {
+  color: white;
+}
+
+.text-bold {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+
+.text-bold:hover {
+  text-decoration: underline;
+}
+
+.img-background span {
+  padding-top: 50%;
+  display: block;
+  color: white;
+}
+
+.text-thumbnail {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 68, 34, 0.08);
+}
+
+.text-thumbnail a:nth-child(1) {
+  padding: 20px;
+  font-weight: bold;
+}
+
+.title a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #ff4422;
+  font-weight: 700;
+}
+
+.text-thumbnail a {
+  color: #ff4422;
+  text-decoration: none;
+}
+
+.thumbnail {
+  width: 97px;
+  height: 97px;
+  padding-left: 10px;
+}
+
+.main-a-list li > a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 1em;
+}
+
+.main-a-list li > a:hover {
+  color: black;
+}
+
+.main-a-list li {
+  margin: 10px auto;
+  border-bottom: 1px solid #aaaaaa;
+  line-height: 1em;
+  padding-bottom: 10px;
+}
+
+.main-a-list {
+  list-style: none;
+}
+
+.main-a-list li::before {
+  content: "\2022";
+  color: #ff4422;
+  display: inline-block;
+  width: 1em;
+  margin-left: 0;
+}
   /* DESKTOP MEDIA QUERIE */
 
 @media screen and (min-device-width: 767px) and (max-device-width: 2000px) {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0 2%;
+  padding: 0 4em;
 }
 
 .navbar-mobile {
@@ -260,113 +368,7 @@ main {
   font-size: 12px;
 }
 
-.main-a-container {
-  max-width: 392px;
-}
 
-.main-articles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.img-background {
-  background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 99%;
-  margin-top: 20px;
-}
-
-.img-background span {
-  font-size: 14px;
-  color: rgb(250, 245, 236);
-  padding: 3%;
-}
-
-.author-span {
-  color: rgb(250, 245, 236);
-  text-decoration: none;
-}
-
-.author-span:hover {
-  color: white;
-}
-
-.text-bold {
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-  color: white;
-}
-
-.text-bold:hover {
-  text-decoration: underline;
-}
-
-.img-background span {
-  padding-top: 50%;
-  display: block;
-  color: white;
-}
-
-.text-thumbnail {
-  display: flex;
-  align-items: center;
-  background: rgba(255, 68, 34, 0.08);
-}
-
-.text-thumbnail a:nth-child(1) {
-  padding: 20px;
-  font-weight: bold;
-}
-
-.title a {
-  text-decoration: none;
-  font-size: 2em;
-  color: #ff4422;
-  font-weight: 700;
-}
-
-.text-thumbnail a {
-  color: #ff4422;
-  text-decoration: none;
-}
-
-.thumbnail {
-  width: 97px;
-  height: 97px;
-  padding-left: 10px;
-}
-
-.main-a-list li > a {
-  text-decoration: none;
-  color: #555555;
-  font-size: 1em;
-}
-
-.main-a-list li > a:hover {
-  color: black;
-}
-
-.main-a-list li {
-  margin: 10px auto;
-  border-bottom: 1px solid #aaaaaa;
-  line-height: 1em;
-  padding-bottom: 10px;
-}
-
-.main-a-list {
-  list-style: none;
-}
-
-.main-a-list li::before {
-  content: "\2022";
-  color: #ff4422;
-  display: inline-block;
-  width: 1em;
-  margin-left: 0;
-}
 
 /* Desktop Latest news */
 
@@ -393,7 +395,7 @@ main {
     padding: 0;
     display: flex;
     flex-direction: column;
-    width: 31%;
+    width: 30%;
     align-items: center;
     margin-right: 10px;
   }
@@ -538,12 +540,17 @@ main {
 
 
 
-@media screen and (max-device-width: 1114px){
+@media screen and (max-device-width: 1024px){
   .transform li{
     display: none;
   }
+
   .transform li:nth-child(1){
     display: block;
+  }
+
+  .indexCo ul li:last-child{
+    display: none;
   }
 } 
   
@@ -556,32 +563,20 @@ main {
   @media screen and (min-device-width: 1024px) { 
     .latest-news li {
       display: flex;
-    flex-wrap: wrap;
-    width: 24%;
+      flex-wrap: wrap;
+      width: 22%;
       justify-content: space-between;
     }
+    
     .indexCo li:last-child{
       display: block;
     }
+
     .indexCo li{
       width: 24%;
     }
 
   }
-
-  
-  @media screen and (max-device-width: 1024px) { 
-
-    .indexCo ul li:last-child{
-      display: none;
-    }
-
-  }
-
-
-
-
-
 
 /* START OF MOBILE */
 @media screen and (max-device-width: 766px) {
@@ -873,6 +868,90 @@ main {
 
   .main-a-container {
     width: 100%;
+  }
+}
+
+@media screen and (min-device-width: 767px) and (max-device-width: 1022px) {
+  /* Medium-size Latest news */
+
+  .latest-news h2 {
+    margin: 20px auto;
+   }  
+  
+  .latest-news h2 a {
+    font-size: 28px;
+    color: #f42;
+  }
+
+  .news-ul div {
+    padding: 3% 5%;
+  }
+  
+  .latest-news ul{
+   display: flex;
+   flex-wrap: wrap;  
+   width: 100%;
+  }
+
+  .latest-news li {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+   .latest-news li span{
+     width:100%;
+    min-height: 135px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .latest-news li:nth-child(1) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
+  }
+
+  .latest-news li:nth-child(2) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Screenshot-2020-05-29-at-12.00.49-412x270.png);
+  }
+
+  .latest-news li:nth-child(3) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png);
+  }
+
+  .latest-news li:nth-child(4) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg);
+  }
+
+  .latest-news li:nth-child(5) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg);
+  }
+
+  .latest-news li:nth-child(6) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png);
+  }
+
+  .latest-news li:nth-child(7) span {
+    background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg);
+  }
+
+  .latest-news li:nth-child(8) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
+  }
+
+  .latest-news li div {
+    font-size: 14px;
+  }
+
+  .latest-news p,
+  .latest-news p a {
+    margin-top: 10px;
+    color: rgb(80, 80, 80);
+    font-size: 12px;
   }
 }
 
