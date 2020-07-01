@@ -313,6 +313,8 @@ main {
   grid-template-areas: "a b"
   "a c";
   grid-gap: 5px;
+  margin: 0 -3.5em;
+
 }
 
 .insights li {
@@ -544,6 +546,8 @@ main {
                         "a c"
                         "d d";
   grid-template-columns: repeat(auto-fit, minmax(106px, 106px));
+  top: 0;
+  position: sticky;
   }
   .navbar-mobile {
     display: flex;
@@ -607,7 +611,10 @@ main {
   }
 
   @media screen and (min-device-width: 1025px) { 
-
+    nav{
+    top: 0;
+    position: sticky;
+    }
 .navbar-mobile {
   display: none;
 }
