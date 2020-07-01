@@ -119,6 +119,42 @@ a {
   margin-top: 20px;
 }
 
+.main-articles .main-a-container:nth-child(1) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-1.PNG");
+}
+
+.main-articles .main-a-container:nth-child(2) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-2.PNG");
+}
+
+.main-articles .main-a-container:nth-child(3) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-3.PNG");
+}
+
+.main-articles .main-a-container:nth-child(4) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-4.PNG");
+}
+
+.main-articles .main-a-container:nth-child(5) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-5.PNG");
+}
+
+.main-articles .main-a-container:nth-child(6) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-6.PNG");
+}
+
+.main-articles .main-a-container:nth-child(7) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
+}
+
+.main-articles .main-a-container:nth-child(8) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-8.PNG");
+}
+
+.main-articles .main-a-container:nth-child(9) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-9.PNG");
+}
+
 .img-background span {
   font-size: 14px;
   color: rgb(250, 245, 236);
@@ -203,11 +239,21 @@ a {
 
 .main-a-list li::before {
   content: "\2022";
-  color: #ff4422;
+  color: #f42;
   display: inline-block;
   width: 1em;
   margin-left: 0;
 }
+
+#index-rigth {
+  display: flex;
+  background-color:white;
+  justify-content: space-evenly;
+  width: 400px;
+  padding: 0;
+  color: #f42;
+}
+
   /* DESKTOP MEDIA QUERIE */
 
 @media screen and (min-device-width: 767px) and (max-device-width: 2000px) {
@@ -451,6 +497,7 @@ main {
   .indexCo {
     margin-top: 20px;
   }
+  
   .indexCo h2 a {
     font-size: 28px;
     color: #f42;
@@ -532,6 +579,11 @@ main {
     .indexCo div:nth-child(4) a{ 
       font-size: 13px;
       color: #555555;
+    }
+
+    .border-right {
+      border-right: 1px solid #f42;
+      padding-right: 20px;
     }
 }
 
@@ -619,7 +671,19 @@ main {
       width: 22%;
       justify-content: space-between;
     }
-    
+    .index-header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #index-rigth {
+      display: flex;
+      background-color:white;
+      justify-content: space-evenly;
+      width: 400px;
+      padding: 0;
+    }
+
     .indexCo li:last-child{
       display: block;
     }
@@ -935,6 +999,13 @@ main {
   .main-a-container {
     min-width: fit-content;
   }
+
+  #index-rigth {    
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
 }
 
 
@@ -1025,6 +1096,14 @@ main {
     display: grid;
     grid-gap: 1%;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #index-rigth {
+    display: flex;
+    background-color:white;
+    justify-content: space-evenly;
+    width: 400px;
+    padding: 0;
   }
 }
 
