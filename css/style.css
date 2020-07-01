@@ -158,12 +158,13 @@ a {
 .img-background span {
   font-size: 14px;
   color: rgb(250, 245, 236);
-  padding: 3%;
+  padding-left: 1em;
 }
 
 .author-span {
   color: rgb(250, 245, 236);
   text-decoration: none;
+  padding-left: 1em;
 }
 
 .author-span:hover {
@@ -175,6 +176,7 @@ a {
   font-weight: 600;
   text-decoration: none;
   color: white;
+  margin-left: 1em;
 }
 
 .text-bold:hover {
