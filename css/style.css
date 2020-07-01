@@ -1,6 +1,86 @@
 /* css reset */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -35,11 +115,11 @@ a {
   color: black;
 }
 
-.navbar-mobile{
+.navbar-mobile {
   display: none;
 }
 
-.black-navbar{
+.black-navbar {
   height: 32px;
   background-color: #131313;
   display: flex;
@@ -48,15 +128,14 @@ a {
   padding: 0 5px;
 }
 
-
-.black-navbar li{
+.black-navbar li {
   display: inline;
   margin-left: 12px;
 }
 
-.black-navbar li a{
-  color: rgb(255,255,255,0.6);
-  font-size:13px;
+.black-navbar li a {
+  color: rgb(255, 255, 255, 0.6);
+  font-size: 13px;
 }
 
 .white-navbar {
@@ -68,50 +147,49 @@ a {
   padding: 5px;
   white-space: nowrap;
 }
-.white-navbar li{
-  display: inline;
 
+.white-navbar li {
+  display: inline;
 }
 
-.white-navbar li a{
+.white-navbar li a {
   color: #aaa;
-  font-size:14px;
+  font-size: 14px;
   padding-left: 12px;
 }
-.transform{
+
+.transform {
   display: flex;
   align-items: center;
-  border-left: 1px solid rgba(80, 80, 80, .1);  
+  border-left: 1px solid rgba(80, 80, 80, 0.1);
   height: 100%;
   width: fit-content;
   justify-content: flex-end;
 }
 
-.transform i{
-  color:  rgba(80, 80, 80, .3); 
-    transform: scaleX(-1);
-    font-size: 16px;
-    margin-right: 20px;
-}
-.transform img{
-  width: 110px; 
-  height: 20px;
+.transform i {
+  color: rgba(80, 80, 80, 0.3);
+  transform: scaleX(-1);
+  font-size: 16px;
+  margin-right: 20px;
 }
 
 
-.transform li:nth-child(3){
-  color:  #555555; 
-    font-size: 12px;
+.transform li:nth-child(3) {
+  color: #555555;
+  font-size: 12px;
 }
-.transform li:nth-child(4) a{
-  color:  #f42; 
-    font-size: 20px;
+
+.transform li:nth-child(4) a {
+  color: #f42;
+  font-size: 20px;
 }
-.transform li:nth-child(5) a{
-  background-color:  #00cccc; 
+
+.transform li:nth-child(5) a {
+  background-color: #00cccc;
   border-radius: 2px;
   line-height: 28px;
-  padding:8px 12px;
+  padding: 8px 12px;
   font-size: 11px;
   color: white;
   margin: 0 10px;
@@ -135,80 +213,90 @@ a {
   grid-template-areas: "a b"
   "a c";
   grid-gap: 5px;
-
 }
+
 .insights li {
   background-size: cover;
   background-position: 50%;
   width: 100%;
   padding: 10px;
-  }
-.insights li:nth-child(1){
+}
+
+.insights li:nth-child(1) {
   grid-area: a;
-  background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
+  background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
 }
 .insights li:nth-child(1) h2 a{
   font-size:  40px;
 }
 
-.insights li:nth-child(2){
+.insights li:nth-child(2) {
   grid-area: b;
-  background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/cc_series_empty-1200x628.jpg);
-}
-.insights li:nth-child(3){
-  grid-area: c;
-  background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
+  background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/cc_series_empty-1200x628.jpg);
 }
 
-.insights h5 a{
+.insights li:nth-child(3) {
+  grid-area: c;
+  background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
+}
+
+.insights h5 a {
   color: white;
   /* font-family: ?; */
   font-size: 14px;
 }
-.insights h2 a{
+
+.insights h2 a {
   color: white;
   font-size: 20px;
 }
+
 .insights p a,
-.insights p{
-  color: rgb(255,255,255,0.6);
+.insights p {
+  color: rgb(255, 255, 255, 0.6);
   font-size: 12px;
 }
 
-
 .main-a-container {
-  max-width:392px;
+  max-width: 392px;
 }
+
 .main-articles {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
 .img-background {
   background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 99%;
-  margin-top:20px;
+  margin-top: 20px;
 }
+
 .img-background span {
   font-size: 14px;
   color: rgb(250, 245, 236);
   padding: 3%;
 }
+
 .author-span {
   color: rgb(250, 245, 236);
-  text-decoration: none;  
+  text-decoration: none;
 }
+
 .author-span:hover {
   color: white;
 }
+
 .text-bold {
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  color: white;    
+  color: white;
 }
+
 .text-bold:hover {
   text-decoration: underline;
 }
@@ -218,13 +306,14 @@ a {
   display: block;
   color: white;
 }
+
 .text-thumbnail {
   display: flex;
   align-items: center;
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, 0.08);
 }
 
-.text-thumbnail a:nth-child(1){
+.text-thumbnail a:nth-child(1) {
   padding: 20px;
   font-weight: bold;
 }
@@ -232,39 +321,45 @@ a {
 .title a {
   text-decoration: none;
   font-size: 2em;
-  color: #FF4422;
+  color: #ff4422;
   font-weight: 700;
 }
 
 .text-thumbnail a {
-  color: #FF4422;  
+  color: #ff4422;
   text-decoration: none;
 }
+
 .thumbnail {
   width: 97px;
   height: 97px;
   padding-left: 10px;
 }
-.main-a-list li>a {
+
+.main-a-list li > a {
   text-decoration: none;
   color: #555555;
   font-size: 1em;
 }
-.main-a-list li>a:hover {
+
+.main-a-list li > a:hover {
   color: black;
 }
+
 .main-a-list li {
   margin: 10px auto;
-  border-bottom: 1px solid #AAAAAA;
+  border-bottom: 1px solid #aaaaaa;
   line-height: 1em;
   padding-bottom: 10px;
 }
+
 .main-a-list {
   list-style: none;
 }
+
 .main-a-list li::before {
   content: "\2022";
-  color: #FF4422;
+  color: #ff4422;
   display: inline-block;
   width: 1em;
   margin-left: 0;
@@ -281,10 +376,10 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-
 }
 
-.icons-container, .social-container {
+.icons-container,
+.social-container {
   display: flex;
   justify-content: center;
   font-size: 14px;
@@ -294,7 +389,6 @@ footer {
 .icons-container li {
   min-width: 40px;
   min-height: 40px;
- 
   border-radius: 50%;
   background-color: #333333;
   margin: 1vw;
@@ -312,11 +406,11 @@ footer {
   color: white;
 }
 
-.links li, .links a {
+.links li,
+.links a {
   list-style-type: none;
-  color: #AAA;
+  color: #aaa;
   text-decoration: none;
-
 }
 
 .social-container li {
@@ -329,7 +423,7 @@ footer {
 }
 
 .footer-text {
-  color: #AAA;
+  color: #aaa;
   background-color: #000000;
   padding: 3rem;
 }
@@ -337,6 +431,7 @@ footer {
 .footer-img {
   width: 3em;
 }
+
 /* Desktop Latest news */
 
   .latest-news h2 {
@@ -346,7 +441,7 @@ footer {
   .latest-news h2 a {
     font-size: 28px;
     color: #f42;
-   }
+  }
 
   .news-ul div {
     padding: 3% 5%;
@@ -357,7 +452,7 @@ footer {
    flex-wrap: wrap;  
    width: 100%;
   }
-  
+
   .latest-news li {
     padding: 0;
     display: flex;
@@ -375,40 +470,47 @@ footer {
     background-repeat: no-repeat;
     background-size: 100%;
   }
-  
-  .latest-news li:nth-child(1) span{
+
+  .latest-news li:nth-child(1) span {
     background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
-  
   }
-  .latest-news li:nth-child(2) span{
+
+  .latest-news li:nth-child(2) span {
     background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Screenshot-2020-05-29-at-12.00.49-412x270.png);
   }
-  .latest-news li:nth-child(3) span{
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png)
+
+  .latest-news li:nth-child(3) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png);
   }
-  .latest-news li:nth-child(4) span{
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg)
+
+  .latest-news li:nth-child(4) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg);
   }
-  .latest-news li:nth-child(5) span{
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg)
+
+  .latest-news li:nth-child(5) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg);
   }
-  .latest-news li:nth-child(6) span{
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png)
+
+  .latest-news li:nth-child(6) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png);
   }
-  .latest-news li:nth-child(7) span{
-  background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg)
+
+  .latest-news li:nth-child(7) span {
+    background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg);
   }
-  .latest-news li:nth-child(8) span{
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png)
+
+  .latest-news li:nth-child(8) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
   }
-  .latest-news li div{
+
+  .latest-news li div {
     font-size: 14px;
   }
-  
+
   .latest-news p,
-  .latest-news p a{
+  .latest-news p a {
     margin-top: 10px;
-    color: rgb(80,80,80);
+    color: rgb(80, 80, 80);
     font-size: 12px;
   }
   .indexCo {
@@ -522,50 +624,57 @@ footer {
   }
 /* START OF MOBILE */
 @media screen and (max-device-width: 767px) {
-  .black-navbar, .white-navbar {
+  .black-navbar,
+  .white-navbar {
     display: none;
   }
+
   .navbar-mobile {
     display: flex;
     justify-content: space-between;
     height: 48px;
   }
+
   .navbar-mobile a {
     width: 106px;
     background-color: #f42;
-    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .navbar-mobile img{
+
+  .navbar-mobile img {
     display: block;
     height: 16px;
     position: relative;
     width: 66px;
   }
+
   .navbar-mobile ul {
     width: 96px;
     display: flex;
     margin-right: 9px;
   }
+
   .navbar-mobile li {
     width: 50%;
-    border-left: 1px solid rgba(80, 80, 80, .1);  
+    border-left: 1px solid rgba(80, 80, 80, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .navbar-mobile ul li:nth-child(1) i{    
-    color:  rgba(80, 80, 80, .3); 
-    transform: scaleX(-1); 
-  
+
+  .navbar-mobile ul li:nth-child(1) i {
+    color: rgba(80, 80, 80, 0.3);
+    transform: scaleX(-1);
   }
-  .navbar-mobile ul li:nth-child(2){
+
+  .navbar-mobile ul li:nth-child(2) {
     color: #f42;
     font-size: 20px;
-  
   }
+
   .spacer {
     height: 60px;
     font-size: 14px;
@@ -575,6 +684,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
   .fixed {
     position: fixed;
     width: 100%;
@@ -582,6 +692,7 @@ footer {
     z-index: 2;
     background-color: white;
   }
+
   /* INSIGHTS */
   .insights {
     display: flex;
@@ -589,56 +700,63 @@ footer {
     padding: 8px;
     margin-top: 106px;
   }
+
   .insights li {
     background-size: cover;
     background-position: 50%;
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
-    }
-  .insights li:nth-child(1){
-    background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
-  }
-  .insights li:nth-child(2){
-    background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/cc_series_empty-1200x628.jpg);
-  }
-  .insights li:nth-child(3){
-    background-image:linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
   }
 
-  .insights h5 a{
+  .insights li:nth-child(1) {
+    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
+  }
+
+  .insights li:nth-child(2) {
+    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/cc_series_empty-1200x628.jpg);
+  }
+
+  .insights li:nth-child(3) {
+    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
+  }
+
+  .insights h5 a {
     color: white;
     /* font-family: ?; */
     font-size: 14px;
   }
-  .insights h2 a{
+
+  .insights h2 a {
     color: white;
     font-size: 20px;
   }
+
   .insights p a,
-  .insights p{
-    color: rgb(255,255,255,0.6);
+  .insights p {
+    color: rgb(255, 255, 255, 0.6);
     font-size: 12px;
   }
 
   .cover-header {
     background-size: cover;
   }
+
   main {
     margin: 0 auto;
     max-width: 1192px;
     padding: 0 20px;
   }
+
   /* Latest news */
+
   .latest-news h2 a {
     font-size: 28px;
     color: #f42;
-   
   }
 
-  .latest-news ul{
+  .latest-news ul {
     margin: 15px -8px -8px -8px;
-    
   }
 
   .latest-news li {
@@ -646,48 +764,57 @@ footer {
     padding: 8px;
     display: flex;
   }
-   .latest-news li span{
-    height:75px;
+
+  .latest-news li span {
+    height: 75px;
     width: 92px;
     display: block;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-  } 
-  .latest-news li:nth-child(1) span{
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
-
   }
-  .latest-news li:nth-child(2) span{
+
+  .latest-news li:nth-child(1) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
+  }
+
+  .latest-news li:nth-child(2) span {
     background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Screenshot-2020-05-29-at-12.00.49-412x270.png);
   }
-  .latest-news li:nth-child(3) span{
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png)
+
+  .latest-news li:nth-child(3) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png);
   }
-  .latest-news li:nth-child(4) span{
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg)
+
+  .latest-news li:nth-child(4) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg);
   }
-  .latest-news li:nth-child(5) span{
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg)
+
+  .latest-news li:nth-child(5) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg);
   }
-  .latest-news li:nth-child(6) span{
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png)
+
+  .latest-news li:nth-child(6) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png);
   }
-  .latest-news li:nth-child(7) span{
-  background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg)
+
+  .latest-news li:nth-child(7) span {
+    background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg);
   }
-  .latest-news li:nth-child(8) span{
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png)
+
+  .latest-news li:nth-child(8) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
   }
-  .latest-news li div{
+
+  .latest-news li div {
     font-size: 14px;
     margin-left: 15px;
   }
 
   .latest-news p,
-  .latest-news p a{
+  .latest-news p a {
     margin-top: 10px;
-    color: rgb(80,80,80);
+    color: rgb(80, 80, 80);
     font-size: 12px;
   }
 
@@ -695,85 +822,94 @@ footer {
   .indexCo {
     margin-top: 20px;
   }
+
   .indexCo h2 a {
     font-size: 28px;
     color: #f42;
   }
+
   .indexCo h3 {
     margin-top: 10px;
   }
+
   .indexCo h3 a {
     font-size: 14px;
     color: #f42;
   }
-  .index-img a{
-    width:60px;
+
+  .index-img a {
+    width: 60px;
     height: 60px;
     background-color: blue;
     display: block;
     position: relative;
   }
-  .index-img{
-    width:60px;
+
+  .index-img {
+    width: 60px;
     height: 60px;
     background-color: blue;
     display: block;
     position: relative;
   }
+
   .indexCo li {
     margin-bottom: 20px;
   }
-  .indexCo h4{
+
+  .indexCo h4 {
     background-color: #f42;
     color: white;
     font-size: 18px;
-    padding: 10px 16px 10px 84px;  
-    
+    padding: 10px 16px 10px 84px;
   }
 
-  .indexCo h4 img{
+  .indexCo h4 img {
     width: 60px;
     height: 60px;
     display: block;
     position: absolute;
-    left:32px;
-
+    left: 32px;
   }
 
-  .indexCo div:nth-child(2){
+  .indexCo div:nth-child(2) {
     color: #000;
-    background: rgba(255,68,34,.08);
-    padding: 10px 16px 10px 84px;  
+    background: rgba(255, 68, 34, 0.08);
+    padding: 10px 16px 10px 84px;
   }
-  .indexCo h6{
+  
+  .indexCo h6 {
     font-size: 11px;
-    opacity: .5;
+    opacity: 0.5;
     font-weight: 500;
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
     line-height: 1.5;
   }
-  .indexCo div:nth-child(3){
+
+  .indexCo div:nth-child(3) {
     color: #000;
     background: #fffaf8;
     padding: 16px;
-    }
-  .indexCo div:nth-child(3) span{
+  }
+
+  .indexCo div:nth-child(3) span {
     font-size: 13px;
     color: #555555;
-    margin-left:5px;
+    margin-left: 5px;
   }
-  .indexCo div:nth-child(4){
-    background: #fffaf8;
-   
-    padding: 16px;
-    border-top: 1px solid rgba(255,68,34,.25);
-    }
-    .indexCo div:nth-child(4) a{ 
-      font-size: 13px;
-      color: #555555;
-    }
 
-    .main-a-container {
-      width:100%
-    }
+  .indexCo div:nth-child(4) {
+    background: #fffaf8;
+    padding: 16px;
+    border-top: 1px solid rgba(255, 68, 34, 0.25);
+  }
+
+  .indexCo div:nth-child(4) a {
+    font-size: 13px;
+    color: #555555;
+  }
+
+  .main-a-container {
+    width: 100%;
+  }
 }
