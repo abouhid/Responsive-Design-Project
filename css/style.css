@@ -217,9 +217,7 @@ main {
   padding: 0 4em;
 }
 
-.navbar-mobile {
-  display: none;
-}
+
 
 .black-navbar {
   height: 32px;
@@ -540,6 +538,55 @@ main {
 
 
 @media screen and (max-device-width: 1024px){
+
+  nav{
+    display: grid;
+    grid-template-areas: "a b"
+                        "a c"
+                        "d d";
+  grid-template-columns: repeat(auto-fit, minmax(106px, 106px));
+  }
+  .navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+    position: absolute;
+    grid-area: a;
+  }
+
+  .black-navbar{
+    grid-area: b;
+        font-size: 11px;
+  }
+  .white-navbar{
+    grid-area: c;
+  }
+  .spacer{
+    grid-area: d;
+  }
+  
+
+  .navbar-mobile a {
+    width: 106px;
+    height: 80px;
+    background-color: #f42;
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-mobile img {
+    display: block;
+    height: 16px;
+    position: relative;
+    width: 66px;
+  }
+  .navbar-mobile ul, 
+  .second {
+    display: none;
+  }
+
   .transform li{
     display: none;
   }
@@ -560,7 +607,12 @@ main {
     }
   }
 
-  @media screen and (min-device-width: 1024px) { 
+  @media screen and (min-device-width: 1025px) { 
+
+.navbar-mobile {
+  display: none;
+}
+
     .latest-news li {
       display: flex;
       flex-wrap: wrap;
@@ -591,14 +643,22 @@ main {
     display: none;
   }
 
+  nav{
+    display: block;
+  }
+  
+
   .navbar-mobile {
     display: flex;
     justify-content: space-between;
     height: 48px;
+    position: relative;
+    background-color: white;
   }
 
   .navbar-mobile a {
     width: 106px;
+    height: 100%;
     background-color: #f42;
     background: linear-gradient(to bottom right, #c09, #f42 85%);
     display: flex;
@@ -640,11 +700,12 @@ main {
   .spacer {
     height: 60px;
     font-size: 14px;
-    /* check font-size responsiveness */
     background-color: rgb(255, 205, 41);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 48px;
+
   }
 
   .fixed {
@@ -652,7 +713,6 @@ main {
     width: 100%;
     top: 0;
     z-index: 2;
-    background-color: white;
   }
 
   /* INSIGHTS */
