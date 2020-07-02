@@ -194,6 +194,7 @@ a {
   display: flex;
   align-items: center;
   background: rgba(255, 68, 34, 0.08);
+  justify-content: space-between;
 }
 
 .text-thumbnail a:nth-child(1) {
@@ -539,21 +540,23 @@ main {
     margin: 20px 10px 20px 0;
     display: block;
   }
-  .indexCo h4{
+  .indexCo h4 {
     background-color: #f42;
     color: white;
     font-size: 18px;
-    padding: 10px 16px 10px 84px; 
-    position: relative;
+    height: 43px;
+    display: flex;
   }
-  
-  .indexCo h4 img{
+
+  .indexCo h4 img {
     width: 60px;
     height: 60px;
     display: block;
-    position: absolute;
-    left: 10px;
-  
+    margin: 10px 10px;
+  }
+ 
+  .indexCo h4 p{
+    margin-top:10px;
   }
   
   .indexCo div:nth-child(2){
@@ -563,7 +566,6 @@ main {
   }
   .indexCo h6{
     font-size: 11px;
-    opacity: .5;
     font-weight: 500;
     letter-spacing: .04em;
     line-height: 1.5;
@@ -608,7 +610,7 @@ main {
     display: none;
   }
 
-  nav{
+  header {
     display: grid;
     grid-template-areas: "a b"
                         "a c"
@@ -668,7 +670,7 @@ main {
   }
 
   @media screen and (min-device-width: 1025px) { 
-    nav{
+    header {
     top: 0;
     position: sticky;
     }
@@ -735,7 +737,7 @@ main {
     display: none;
   }
 
-  nav{
+  header{
     display: block;
   }
   
@@ -804,7 +806,6 @@ main {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 99999;
   }
 
   /* INSIGHTS */
@@ -977,16 +978,19 @@ main {
     background-color: #f42;
     color: white;
     font-size: 18px;
-    padding: 10px 16px 10px 84px;
-    
+    height: 43px;
+    display: flex;
   }
 
   .indexCo h4 img {
     width: 60px;
     height: 60px;
     display: block;
-    position: absolute;
-    left: 32px;
+    margin: 10px 10px;
+  }
+ 
+  .indexCo h4 p{
+    margin-top:10px;
   }
 
   .indexCo div:nth-child(2) {
@@ -997,7 +1001,6 @@ main {
   
   .indexCo h6 {
     font-size: 11px;
-    opacity: 0.5;
     font-weight: 500;
     letter-spacing: 0.04em;
     line-height: 1.5;
