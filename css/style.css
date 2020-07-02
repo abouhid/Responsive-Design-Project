@@ -165,6 +165,9 @@ a {
   font-size: 14px;
   color: rgb(250, 245, 236);
   padding-left: 1em;
+  padding-top: 40%;
+  display: block;
+  color: white;
 }
 
 .author-span {
@@ -189,22 +192,11 @@ a {
   text-decoration: underline;
 }
 
-.img-background span {
-  padding-top: 40%;
-  display: block;
-  color: white;
-}
-
 .text-thumbnail {
   display: flex;
   align-items: center;
   background: rgba(255, 68, 34, 0.08);
   justify-content: space-between;
-}
-
-.text-thumbnail a:nth-child(1) {
-  padding: 20px;
-  font-weight: bold;
 }
 
 .title a {
@@ -219,16 +211,21 @@ a {
   text-decoration: none;
 }
 
-.thumbnail {
-  min-width: 97px;
-  min-height: 97px;
-  padding-left: 10px;
-}
-
 .main-a-list li > a {
   text-decoration: none;
   color: #555;
   font-size: 1em;
+}
+
+.text-thumbnail a:nth-child(1) {
+  padding: 20px;
+  font-weight: bold;
+}
+
+.thumbnail {
+  min-width: 97px;
+  min-height: 97px;
+  padding-left: 10px;
 }
 
 .main-a-list li > a:hover {
