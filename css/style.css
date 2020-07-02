@@ -231,7 +231,7 @@ a {
 
   main {
     margin: 0 auto;
-    max-width: 1192px;
+    width: 200px;
   }
 
   /* Latest news */
@@ -251,8 +251,8 @@ a {
   }
 
   .latest-news li span {
-    height: 75px;
-    width: 92px;
+    min-height: 75px;
+    min-width: 75px;
     display: block;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -438,6 +438,130 @@ a {
     padding: 10px 16px 10px 84px;
   }
 /* } */
+.img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  background-size: cover;
+  min-height: 276px;
+}
+
+.main-articles .main-a-container:nth-child(1) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-1.PNG");
+}
+
+.main-articles .main-a-container:nth-child(2) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-2.PNG");
+}
+
+.main-articles .main-a-container:nth-child(3) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-3.PNG");
+}
+
+.main-articles .main-a-container:nth-child(4) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-4.PNG");
+}
+
+.main-articles .main-a-container:nth-child(5) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-5.PNG");
+}
+
+.main-articles .main-a-container:nth-child(6) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-6.PNG");
+}
+
+.main-articles .main-a-container:nth-child(7) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
+}
+
+.main-articles .main-a-container:nth-child(8) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-8.PNG");
+}
+
+.main-articles .main-a-container:nth-child(9) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-9.PNG");
+}
+
+.img-background span {
+  font-size: 14px;
+  color: rgb(250, 245, 236);
+  padding-left: 1em;
+  padding-top: 40%;
+  display: block;
+}
+
+.author-span {
+  color: rgb(250, 245, 236);
+  text-decoration: none;
+  padding-left: 1em;
+}
+
+.author-span:hover {
+  color: white;
+}
+
+.text-bold {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.text-bold:hover {
+  text-decoration: underline;
+}
+
+.text-thumbnail {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 68, 34, 0.08);
+  justify-content: space-between;
+}
+
+.title a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #f42;
+  font-weight: 700;
+}
+
+.text-thumbnail a {
+  color: #f42;
+  text-decoration: none;
+}
+
+.main-a-list li {
+  margin: 10px auto;
+  border-bottom: 1px solid #aaa;
+  line-height: 1em;
+  padding-bottom: 10px;
+}
+
+.main-a-list li > a {
+  text-decoration: none;
+  color: #555;
+  font-size: 1em;
+}
+
+.thumbnail {
+  min-width: 97px;
+  min-height: 97px;
+  padding-left: 10px;
+}
+
+.main-a-list {
+  list-style: none;
+}
+
+.main-a-list li::before {
+  content: "\2022";
+  color: #f42;
+  display: inline-block;
+  width: 1em;
+  margin-left: 0;
+}
 
 
 
