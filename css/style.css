@@ -111,372 +111,140 @@ a {
 .hidden {
   display: none;
 }
+
 /* START OF MOBILE */
 
 /* @media screen and (max-device-width: 766px) { */
-  .black-navbar,
-  .white-navbar {
-    display: none;
-  }
 
-  .ind-header {
-    padding: auto 1em;
-    display: flex;
-    justify-content: space-between;
-  }
+.black-navbar,
+.white-navbar {
+  display: none;
+}
 
-  header {
-    display: block;
-  }
+.ind-header {
+  padding: auto 1em;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .navbar-mobile {
-    display: flex;
-    justify-content: space-between;
-    height: 48px;
-    position: relative;
-    background-color: white;
-  }
+header {
+  display: block;
+}
 
-  .navbar-mobile a {
-    width: 106px;
-    height: 100%;
-    background: linear-gradient(to bottom right, #c09, #f42 85%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.navbar-mobile {
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  position: relative;
+  background-color: white;
+}
 
-  .navbar-mobile img {
-    display: block;
-    height: 16px;
-    position: relative;
-    width: 66px;
-  }
+.navbar-mobile a {
+  width: 106px;
+  height: 100%;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .navbar-mobile ul {
-    width: 96px;
-    display: flex;
-    margin-right: 9px;
-  }
+.navbar-mobile img {
+  display: block;
+  height: 16px;
+  position: relative;
+  width: 66px;
+}
 
-  .navbar-mobile li {
-    width: 50%;
-    border-left: 1px solid rgba(80, 80, 80, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.navbar-mobile ul {
+  width: 96px;
+  display: flex;
+  margin-right: 9px;
+}
 
-  .spacer {
-    height: 60px;
-    font-size: 14px;
-    background-color: rgb(255, 205, 41);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 48px;
-  }
+.navbar-mobile li {
+  width: 50%;
+  border-left: 1px solid rgba(80, 80, 80, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .fixed {
-    position: fixed;
-    width: 100%;
-    top: 0;
-  }
+.spacer {
+  height: 60px;
+  font-size: 14px;
+  background-color: rgb(255, 205, 41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
 
-  /* INSIGHTS */
-  .insights {
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    margin-top: 106px;
-  }
-
-  .insights li {
-    background-size: cover;
-    background-position: 50%;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    min-height: 30vh;
-  }
-
-  .insights li img {
-    display: none;
-  }
-  .index-img a {
-    width: 60px;
-    height: 60px;
-    background-color: blue;
-    display: block;
-    position: relative;
-  }
-  .insights li:nth-child(1) h5 {
-    text-align: start;
-  }
-  .insights h5 a {
-    color: white;
-    font-size: 14px;
-    display: block;
-    margin-top: 40px;
-  }
-
-  .insights h2 a {
-    color: white;
-    font-size: 20px;
-  }
-
-  .insights p a,
-  .insights p {
-    color: rgb(255, 255, 255, 0.6);
-    font-size: 12px;
-  }
-
-  .cover-header {
-    background-size: cover;
-  }
-
-  main {
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-
-  /* Latest news */
-  .latest-news h2 a {
-    font-size: 28px;
-    color: #f42;
-  }
-
-  .latest-news li {
-    padding: 8px;
-    display: flex;
-  }
-
-  .latest-news li span {
-    min-height: 75px;
-    min-width: 75px;
-    display: block;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .latest-news li div {
-    font-size: 14px;
-    margin-left: 15px;
-  }
-
-  .latest-news p,
-  .latest-news p a {
-    margin-top: 10px;
-    color: rgb(80, 80, 80);
-    font-size: 12px;
-  }
-
-  /* index Co */
-  .indexCo {
-    margin-top: 20px;
-  }
-
-  .indexCo h2 a {
-    font-size: 28px;
-    color: #f42;
-  }
-
-  .indexCo h3 {
-    margin-top: 10px;
-    width: fit-content;
-    height: fit-content;
-  }
-
-  .indexCo h3 a {
-    font-size: 14px;
-    color: #f42;
-  }
-
-  .index-img {
-    width: 60px;
-    height: 60px;
-    background-color: blue;
-    display: block;
-    position: relative;
-  }
-
-  .indexCo li {
-    margin-bottom: 20px;
-    display: block;
-    margin-top: 20px;
-  }
-
-  .indexCo h4 {
-    background-color: #f42;
-    color: white;
-    font-size: 18px;
-    height: 43px;
-    display: flex;
-  }
-
-  .indexCo h4 a {
-    color: white;
-    display: flex;
-    align-items: center;
-  }
-
-  .indexCo h4 img {
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin: 10px 10px;
-  }
-
-  .indexCo h4 p {
-    margin-top: 10px;
-  }
-
-  .indexCo h6 {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    line-height: 1.5;
-  }
-
-  .main-a-container {
-    min-width: fit-content;
-  }
-
-  .index-right {
-    background-color: white;
-    display: flex;
-
-    flex-direction: column;
-  }
-
-  .indexCo div:nth-child(3) {
-    color: #000;
-    background: #fffaf8;
-    padding: 16px;
-  }
-
-  .indexCo div:nth-child(3) span {
-    font-size: 13px;
-    color: #555;
-    margin-left: 5px;
-  }
-
-  .indexCo div:nth-child(4) {
-    background: #fffaf8;
-    padding: 16px;
-    border-top: 1px solid rgba(255, 68, 34, 0.25);
-  }
-
-  .indexCo div:nth-child(4) a {
-    font-size: 13px;
-    color: #555;
-  }
-
-  .insights li:nth-child(2) {
-    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/cc_series_empty-1200x628.jpg);
-  }
-
-  .insights li:nth-child(3) {
-    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
-  }
-
-  .navbar-mobile ul li:nth-child(1) i {
-    color: rgba(80, 80, 80, 0.3);
-    transform: scaleX(-1);
-  }
-
-  
-  .insights li:nth-child(1) {
-    background-image: linear-gradient(to bottom, rgb(255, 68, 34, 0.5) 50%, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
-  }
-
-  .latest-news li:nth-child(1) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
-  }
-
-  .latest-news li:nth-child(2) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Screenshot-2020-05-29-at-12.00.49-412x270.png);
-  }
-
-  .indexCo li:last-child {
-    display: block;
-  }
-
-  .navbar-mobile ul li:nth-child(2) {
-    color: #f42;
-    font-size: 20px;
-  }
-
-  .latest-news li:nth-child(3) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png);
-  }
-
-  .latest-news li:nth-child(4) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg);
-  }
-
-  .latest-news li:nth-child(5) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg);
-  }
-
-  .latest-news li:nth-child(6) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png);
-  }
-
-  .latest-news li:nth-child(7) span {
-    background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg);
-  }
-
-  .latest-news li:nth-child(8) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
-  }
-
- 
-/* } */
-.img-background {
-  background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
-  background-repeat: no-repeat;
-  background-position: bottom;
+.fixed {
+  position: fixed;
   width: 100%;
+  top: 0;
+}
+
+/* INSIGHTS */
+
+.insights {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  margin-top: 106px;
+}
+
+.insights li {
   background-size: cover;
-  min-height: 276px;
+  background-position: 50%;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  min-height: 30vh;
 }
 
-.main-articles .main-a-container:nth-child(1) .img-background {
-  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-1.PNG");
+.insights li img {
+  display: none;
 }
 
-.main-articles .main-a-container:nth-child(2) .img-background {
-  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-2.PNG");
+.index-img a {
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+  display: block;
+  position: relative;
 }
 
-.main-articles .main-a-container:nth-child(3) .img-background {
-  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-3.PNG");
+.insights li:nth-child(1) h5 {
+  text-align: start;
 }
 
-.main-articles .main-a-container:nth-child(4) .img-background {
-  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-4.PNG");
+.title a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #f42;
+  font-weight: 700;
 }
 
-.main-articles .main-a-container:nth-child(5) .img-background {
-  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-5.PNG");
+.cover-header {
+  background-size: cover;
 }
 
-.main-articles .main-a-container:nth-child(6) .img-background {
-  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-6.PNG");
+main {
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
-.main-articles .main-a-container:nth-child(7) .img-background {
-  background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
+/* Latest news */
+
+.latest-news h2 a {
+  font-size: 28px;
+  color: #f42;
 }
 
-.main-articles .main-a-container:nth-child(8) .img-background {
-  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-8.PNG");
-}
-
-.main-articles .main-a-container:nth-child(9) .img-background {
-  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-9.PNG");
+.latest-news li {
+  padding: 8px;
+  display: flex;
 }
 
 .img-background span {
@@ -485,6 +253,213 @@ a {
   padding-left: 1em;
   padding-top: 40%;
   display: block;
+}
+
+.latest-news li span {
+  min-height: 75px;
+  min-width: 75px;
+  display: block;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.latest-news li div {
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.latest-news p,
+.latest-news p a {
+  margin-top: 10px;
+  color: rgb(80, 80, 80);
+  font-size: 12px;
+}
+
+/* index Co */
+
+.indexCo {
+  margin-top: 20px;
+}
+
+.indexCo h2 a {
+  font-size: 28px;
+  color: #f42;
+}
+
+.indexCo h3 {
+  margin-top: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.indexCo h3 a {
+  font-size: 14px;
+  color: #f42;
+}
+
+.insights p a,
+.insights p {
+  color: rgb(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+.index-img {
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+  display: block;
+  position: relative;
+}
+
+.indexCo li {
+  margin-bottom: 20px;
+  display: block;
+  margin-top: 20px;
+}
+
+.indexCo h4 {
+  background-color: #f42;
+  color: white;
+  font-size: 18px;
+  height: 43px;
+  display: flex;
+}
+
+.indexCo h4 a {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.indexCo h4 img {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 10px 10px;
+}
+
+.indexCo h4 p {
+  margin-top: 10px;
+}
+
+.indexCo h6 {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.main-a-container {
+  min-width: fit-content;
+}
+
+.index-right {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.insights h5 a {
+  color: white;
+  font-size: 14px;
+  display: block;
+  margin-top: 40px;
+}
+
+.insights h2 a {
+  color: white;
+  font-size: 20px;
+}
+
+.indexCo div:nth-child(3) {
+  color: #000;
+  background: #fffaf8;
+  padding: 16px;
+}
+
+.indexCo div:nth-child(3) span {
+  font-size: 13px;
+  color: #555;
+  margin-left: 5px;
+}
+
+.indexCo div:nth-child(4) {
+  background: #fffaf8;
+  padding: 16px;
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+}
+
+.indexCo div:nth-child(4) a {
+  font-size: 13px;
+  color: #555;
+}
+
+.insights li:nth-child(2) {
+  background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/cc_series_empty-1200x628.jpg);
+}
+
+.insights li:nth-child(3) {
+  background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
+}
+
+.navbar-mobile ul li:nth-child(1) i {
+  color: rgba(80, 80, 80, 0.3);
+  transform: scaleX(-1);
+}
+
+.insights li:nth-child(1) {
+  background-image: linear-gradient(to bottom, rgb(255, 68, 34, 0.5) 50%, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
+}
+
+.latest-news li:nth-child(1) span {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
+}
+
+.latest-news li:nth-child(2) span {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Screenshot-2020-05-29-at-12.00.49-412x270.png);
+}
+
+.indexCo li:last-child {
+  display: block;
+}
+
+.navbar-mobile ul li:nth-child(2) {
+  color: #f42;
+  font-size: 20px;
+}
+
+.latest-news li:nth-child(3) span {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png);
+}
+
+.latest-news li:nth-child(4) span {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg);
+}
+
+.latest-news li:nth-child(5) span {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg);
+}
+
+.latest-news li:nth-child(6) span {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png);
+}
+
+.latest-news li:nth-child(7) span {
+  background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg);
+}
+
+.latest-news li:nth-child(8) span {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
+}
+
+.img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  background-size: cover;
+  min-height: 276px;
 }
 
 .author-span {
@@ -514,13 +489,6 @@ a {
   align-items: center;
   background: rgba(255, 68, 34, 0.08);
   justify-content: space-between;
-}
-
-.title a {
-  text-decoration: none;
-  font-size: 2em;
-  color: #f42;
-  font-weight: 700;
 }
 
 .text-thumbnail a {
@@ -559,9 +527,41 @@ a {
   margin-left: 0;
 }
 
+.main-articles .main-a-container:nth-child(1) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-1.PNG");
+}
 
+.main-articles .main-a-container:nth-child(2) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-2.PNG");
+}
 
+.main-articles .main-a-container:nth-child(3) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-3.PNG");
+}
 
+.main-articles .main-a-container:nth-child(4) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-4.PNG");
+}
+
+.main-articles .main-a-container:nth-child(5) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-5.PNG");
+}
+
+.main-articles .main-a-container:nth-child(6) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-6.PNG");
+}
+
+.main-articles .main-a-container:nth-child(7) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
+}
+
+.main-articles .main-a-container:nth-child(8) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-8.PNG");
+}
+
+.main-articles .main-a-container:nth-child(9) .img-background {
+  background-image: linear-gradient(to bottom, transparent, black), url("../images/img-9.PNG");
+}
 
 /* DESKTOP MEDIA QUERIE */
 
@@ -570,7 +570,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* max-width: none; 
+
+    /* max-width: none;
     padding: 0; */
   }
 
@@ -586,43 +587,7 @@ a {
     background-size: cover;
     min-height: 276px;
   }
-  
-  .main-articles .main-a-container:nth-child(1) .img-background {
-    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-1.PNG");
-  }
-  
-  .main-articles .main-a-container:nth-child(2) .img-background {
-    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-2.PNG");
-  }
-  
-  .main-articles .main-a-container:nth-child(3) .img-background {
-    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-3.PNG");
-  }
-  
-  .main-articles .main-a-container:nth-child(4) .img-background {
-    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-4.PNG");
-  }
-  
-  .main-articles .main-a-container:nth-child(5) .img-background {
-    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-5.PNG");
-  }
-  
-  .main-articles .main-a-container:nth-child(6) .img-background {
-    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-6.PNG");
-  }
-  
-  .main-articles .main-a-container:nth-child(7) .img-background {
-    background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
-  }
-  
-  .main-articles .main-a-container:nth-child(8) .img-background {
-    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-8.PNG");
-  }
-  
-  .main-articles .main-a-container:nth-child(9) .img-background {
-    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-9.PNG");
-  }
-  
+
   .img-background span {
     font-size: 14px;
     color: rgb(250, 245, 236);
@@ -630,17 +595,17 @@ a {
     padding-top: 40%;
     display: block;
   }
-  
+
   .author-span {
     color: rgb(250, 245, 236);
     text-decoration: none;
     padding-left: 1em;
   }
-  
+
   .author-span:hover {
     color: white;
   }
-  
+
   .text-bold {
     font-size: 20px;
     font-weight: 600;
@@ -648,53 +613,53 @@ a {
     color: white;
     display: block;
   }
-  
+
   .text-bold:hover {
     text-decoration: underline;
   }
-  
+
   .text-thumbnail {
     display: flex;
     align-items: center;
     background: rgba(255, 68, 34, 0.08);
     justify-content: space-between;
   }
-  
+
   .title a {
     text-decoration: none;
     font-size: 2em;
     color: #f42;
     font-weight: 700;
   }
-  
+
   .text-thumbnail a {
     color: #f42;
     text-decoration: none;
   }
-  
+
   .main-a-list li {
     margin: 10px auto;
     border-bottom: 1px solid #aaa;
     line-height: 1em;
     padding-bottom: 10px;
   }
-  
+
   .main-a-list li > a {
     text-decoration: none;
     color: #555;
     font-size: 1em;
   }
-  
+
   .thumbnail {
     min-width: 97px;
     min-height: 97px;
     padding-left: 10px;
   }
-  
+
   .main-a-list {
     list-style: none;
   }
-  
+
   .main-a-list li::before {
     content: "\2022";
     color: #f42;
@@ -702,7 +667,7 @@ a {
     width: 1em;
     margin-left: 0;
   }
-  
+
   .index-img a {
     width: 60px;
     height: 60px;
@@ -821,8 +786,6 @@ a {
   }
 
   /* Desktop Latest news */
-
-
   .news-ul div {
     padding: 3% 5%;
   }
@@ -841,7 +804,6 @@ a {
     flex-direction: column;
     width: 30%;
     align-items: center;
-    
   }
 
   .latest-news li span {
@@ -948,6 +910,54 @@ a {
     font-weight: bold;
   }
 
+  .series {
+    color: #000;
+    background: rgba(255, 68, 34, 0.08);
+    padding: 10px 16px 10px 84px;
+  }
+
+  .indexCo div:nth-child(3) {
+    color: #000;
+    background: #fffaf8;
+    padding: 16px;
+  }
+
+  .main-articles .main-a-container:nth-child(1) .img-background {
+    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-1.PNG");
+  }
+
+  .main-articles .main-a-container:nth-child(2) .img-background {
+    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-2.PNG");
+  }
+
+  .main-articles .main-a-container:nth-child(3) .img-background {
+    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-3.PNG");
+  }
+
+  .main-articles .main-a-container:nth-child(4) .img-background {
+    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-4.PNG");
+  }
+
+  .main-articles .main-a-container:nth-child(5) .img-background {
+    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-5.PNG");
+  }
+
+  .main-articles .main-a-container:nth-child(6) .img-background {
+    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-6.PNG");
+  }
+
+  .main-articles .main-a-container:nth-child(7) .img-background {
+    background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
+  }
+
+  .main-articles .main-a-container:nth-child(8) .img-background {
+    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-8.PNG");
+  }
+
+  .main-articles .main-a-container:nth-child(9) .img-background {
+    background-image: linear-gradient(to bottom, transparent, black), url("../images/img-9.PNG");
+  }
+
   .insights li:nth-child(1) {
     grid-area: a;
     background-image: linear-gradient(to bottom, rgb(255, 68, 34, 0.5) 50%, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
@@ -995,18 +1005,6 @@ a {
     background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
   }
 
-  .series {
-    color: #000;
-    background: rgba(255, 68, 34, 0.08);
-    padding: 10px 16px 10px 84px;
-  }
-
-  .indexCo div:nth-child(3) {
-    color: #000;
-    background: #fffaf8;
-    padding: 16px;
-  }
-
   .indexCo div:nth-child(3) span {
     font-size: 12px;
     color: #555;
@@ -1035,12 +1033,16 @@ a {
 
 @media screen and (max-device-width: 1024px) and (min-device-width: 767px) {
   /* Medium-size */
-  
   .navbar-mobile ul,
   .second,
   .transform li,
   .insights h5 {
     display: none;
+  }
+
+  header{
+    position: fixed;
+    width: 100%;
   }
 
   .white-navbar ul:nth-child(1) {
@@ -1053,11 +1055,14 @@ a {
     height: 48px;
     position: absolute;
     grid-area: a;
+    background: transparent;
   }
 
   .black-navbar {
     grid-area: b;
     font-size: 11px;
+    margin-left: 106px;
+    justify-content: space-between;
   }
 
   .white-navbar {
@@ -1096,101 +1101,102 @@ a {
   .indexCo ul li:last-child {
     display: none;
   }
-    .ind-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .index-right{
-      display: flex;
-      flex-direction: row;
-      background-color: white;
-      justify-content: space-evenly;
-      width: 330px;
-      padding: 0;
-      margin: 0;    
-    }
-  
-    .news-ul div {
-      padding: 3% 5%;
-    }
-  
-    .latest-news ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      width: 100%;
-      grid-gap: 5px;
-    }
-  
-    .latest-news li {
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-      margin-right: 10px;
-      min-height: 220px;
-      min-width: 230px;
-    }
-  
-    .latest-news li span {
-      width: 100%;
-      min-height: 135px;
-      display: block;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-  
-    .latest-news li:nth-child(1) span {
-      background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
-    }
-  
-    .latest-news li:nth-child(2) span {
-      background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Screenshot-2020-05-29-at-12.00.49-412x270.png);
-    }
-  
-    .latest-news li:nth-child(3) span {
-      background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png);
-    }
-  
-    .latest-news li:nth-child(4) span {
-      background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg);
-    }
-  
-    .latest-news li:nth-child(5) span {
-      background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg);
-    }
-  
-    .latest-news li:nth-child(6) span {
-      background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png);
-    }
-  
-    .latest-news li:nth-child(7) span {
-      background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg);
-    }
-  
-    .latest-news li:nth-child(8) span {
-      background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
-    }
-  
-    .latest-news li div {
-      font-size: 14px;
-    }
-  
-    .latest-news p,
-    .latest-news p a {
-      margin-top: 10px;
-      color: rgb(80, 80, 80);
-      font-size: 12px;
-    }
-  
-    .main-articles {
-      display: grid;
-      grid-gap: 1%;
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
+
+  .ind-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .index-right {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-evenly;
+    width: 330px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .news-ul div {
+    padding: 3% 5%;
+  }
+
+  .latest-news ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    grid-gap: 5px;
+  }
+
+  .latest-news li {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-right: 10px;
+    min-height: 220px;
+    min-width: 230px;
+  }
+
+  .latest-news li span {
+    width: 100%;
+    min-height: 135px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .latest-news li:nth-child(1) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
+  }
+
+  .latest-news li:nth-child(2) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Screenshot-2020-05-29-at-12.00.49-412x270.png);
+  }
+
+  .latest-news li:nth-child(3) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png);
+  }
+
+  .latest-news li:nth-child(4) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg);
+  }
+
+  .latest-news li:nth-child(5) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg);
+  }
+
+  .latest-news li:nth-child(6) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png);
+  }
+
+  .latest-news li:nth-child(7) span {
+    background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg);
+  }
+
+  .latest-news li:nth-child(8) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
+  }
+
+  .latest-news li div {
+    font-size: 14px;
+  }
+
+  .latest-news p,
+  .latest-news p a {
+    margin-top: 10px;
+    color: rgb(80, 80, 80);
+    font-size: 12px;
+  }
+
+  .main-articles {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-device-width: 1025px) {
@@ -1237,19 +1243,20 @@ a {
     justify-content: space-between;
     align-items: center;
   }
-  .index-right{
+
+  .index-right {
     display: flex;
     flex-direction: row;
     background-color: white;
     justify-content: space-evenly;
     width: 400px;
     padding: 0;
-    margin: 0;    
+    margin: 0;
   }
+
   .indexCo li {
     width: 24%;
   }
-
 
   .main-articles {
     display: grid;
