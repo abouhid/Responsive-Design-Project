@@ -1034,6 +1034,8 @@ a {
 }
 
 @media screen and (max-device-width: 1024px) and (min-device-width: 767px) {
+  /* Medium-size */
+  
   .navbar-mobile ul,
   .second,
   .transform li,
@@ -1094,8 +1096,6 @@ a {
   .indexCo ul li:last-child {
     display: none;
   }
-
-    /* Medium-size */
     .ind-header {
       display: flex;
       justify-content: space-between;
