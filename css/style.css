@@ -245,10 +245,6 @@ a {
     font-size: 28px;
     color: #f42;
   }
-  .latest-news h2 a:nth-child(2) {
-    font-size: 14px;
-    color: #f42;
-  }
 
   .latest-news li {
     padding: 8px;
@@ -276,22 +272,11 @@ a {
     font-size: 12px;
   }
 
-  .ind-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   /* index Co */
   .indexCo {
     margin-top: 20px;
   }
-  .series {
-    color: #000;
-    background: rgba(255, 68, 34, 0.08);
-    padding: 10px 16px 10px 84px;
-    height: 54px;
-  }
+
   .indexCo h2 a {
     font-size: 28px;
     color: #f42;
@@ -831,6 +816,7 @@ a {
   }
 
   .main-a-container {
+    max-width: 368px;
     margin: 0.5em;
   }
 
@@ -904,7 +890,7 @@ a {
   .indexCo li {
     margin: 20px 10px 20px 0;
     display: block;
-    max-width: 315px;
+    max-width: 272px;
   }
 
   .indexCo h4 {
@@ -1009,6 +995,12 @@ a {
 
   .latest-news li:nth-child(8) span {
     background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
+  }
+
+  .series {
+    color: #000;
+    background: rgba(255, 68, 34, 0.08);
+    padding: 10px 16px 10px 84px;
   }
 
   .indexCo div:nth-child(3) {
@@ -1147,7 +1139,12 @@ a {
     width: 100%;
     justify-content: space-between;
   }
-  
+
+  .ind-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .index-right{
     display: flex;
     flex-direction: row;
@@ -1160,6 +1157,7 @@ a {
   .indexCo li {
     width: 24%;
   }
+
 
   .main-articles {
     display: grid;
