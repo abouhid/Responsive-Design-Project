@@ -108,7 +108,9 @@ a {
   cursor: pointer;
 }
 
-
+.hidden {
+  display: none;
+}
 /* START OF MOBILE */
 
 /* @media screen and (max-device-width: 766px) { */
@@ -208,10 +210,14 @@ a {
     display: block;
     position: relative;
   }
-
+  .insights li:nth-child(1) h5 {
+    text-align: start;
+  }
   .insights h5 a {
     color: white;
     font-size: 14px;
+    display: block;
+    margin-top: 40px;
   }
 
   .insights h2 a {
@@ -231,7 +237,7 @@ a {
 
   main {
     margin: 0 auto;
-    /* width: 200px; */
+    padding: 0 10px;
   }
 
   /* Latest news */
@@ -240,12 +246,7 @@ a {
     color: #f42;
   }
 
-  .latest-news ul {
-    margin: 15px -8px -8px -8px;
-  }
-
   .latest-news li {
-    height: 88px;
     padding: 8px;
     display: flex;
   }
@@ -345,6 +346,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
+    margin-left: -84px ;
   }
 
   .indexCo div:nth-child(3) {
@@ -383,10 +385,7 @@ a {
     transform: scaleX(-1);
   }
 
-  .insights li:nth-child(1) h5 {
-    text-align: end;
-  }
-
+  
   .insights li:nth-child(1) {
     background-image: linear-gradient(to bottom, rgb(255, 68, 34, 0.5) 50%, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
   }
@@ -574,12 +573,14 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* max-width: none; 
+    padding: 0; */
   }
 
-  .hidden {
-    display: none;
+  .insights li:nth-child(1) h5 {
+    text-align: end;
   }
-  
+
   .img-background {
     background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
     background-repeat: no-repeat;
@@ -838,11 +839,6 @@ a {
     margin: 20px auto;
   }
 
-  .latest-news h2 a {
-    font-size: 28px;
-    color: #f42;
-  }
-
   .news-ul div {
     padding: 3% 5%;
   }
@@ -861,8 +857,7 @@ a {
     flex-direction: column;
     width: 30%;
     align-items: center;
-    margin-right: 10px;
-    max-width: 270px;
+    
   }
 
   .latest-news li span {
@@ -1063,7 +1058,7 @@ a {
   }
 }
 
-/* @media screen and (max-device-width: 1024px) and (min-device-width: 768px) {
+@media screen and (max-device-width: 1024px) and (min-device-width: 767px) {
   .navbar-mobile ul,
   .second,
   .transform li,
@@ -1128,7 +1123,7 @@ a {
   .indexCo ul li:last-child {
     display: none;
   }
-} */
+}
 
 @media screen and (min-device-width: 1025px) {
   header {
@@ -1217,11 +1212,6 @@ a {
     margin: 20px auto;
   }
 
-  .latest-news h2 a {
-    font-size: 28px;
-    color: #f42;
-  }
-
   .news-ul div {
     padding: 3% 5%;
   }
@@ -1230,6 +1220,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
+    grid-gap: 5px;
   }
 
   .latest-news li {
@@ -1239,6 +1230,8 @@ a {
     width: 100%;
     align-items: center;
     margin-right: 10px;
+    min-height: 220px;
+    min-width: 230px;
   }
 
   .latest-news li span {
@@ -1305,70 +1298,6 @@ a {
     justify-content: space-evenly;
     width: 400px;
     padding: 0;
-  }
-  .navbar-mobile ul,
-  .second,
-  .transform li,
-  .insights h5 {
-    display: none;
-  }
-
-  header {
-    display: grid;
-    grid-template-areas: "a b""a c""d d";
-    grid-template-columns: repeat(auto-fit, minmax(106px, 106px));
-    top: 0;
-    position: sticky;
-  }
-
-  .navbar-mobile {
-    display: flex;
-    justify-content: space-between;
-    height: 48px;
-    position: absolute;
-    grid-area: a;
-  }
-
-  .black-navbar {
-    grid-area: b;
-    font-size: 11px;
-  }
-
-  .white-navbar {
-    grid-area: c;
-  }
-
-  .spacer {
-    grid-area: d;
-    margin: 0;
-  }
-
-  .navbar-mobile a {
-    width: 106px;
-    height: 80px;
-    background: linear-gradient(to bottom right, #c09, #f42 85%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .navbar-mobile img {
-    display: block;
-    height: 16px;
-    position: relative;
-    width: 66px;
-  }
-
-  .insights li img {
-    display: none;
-  }
-
-  .transform li:nth-child(1) {
-    display: block;
-  }
-
-  .indexCo ul li:last-child {
-    display: none;
   }
 }
 
