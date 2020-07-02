@@ -14,7 +14,7 @@ Align all elements with float and flex or grid.
 - CSS
 
 
-[Live Demo Link](https://raw.githack.com/abouhid/Responsive-Design-Project/feature-branch/index.html)
+[Live Demo Link](https://rawcdn.githack.com/abouhid/Responsive-Design-Project/a34907025bf4884bd5cc1cf3f5f865391c880265/index.html)
 
 ### Prerequisites
 
