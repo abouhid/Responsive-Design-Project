@@ -108,7 +108,9 @@ a {
   cursor: pointer;
 }
 
-
+.hidden {
+  display: none;
+}
 /* START OF MOBILE */
 
 /* @media screen and (max-device-width: 766px) { */
@@ -208,10 +210,14 @@ a {
     display: block;
     position: relative;
   }
-
+  .insights li:nth-child(1) h5 {
+    text-align: start;
+  }
   .insights h5 a {
     color: white;
     font-size: 14px;
+    display: block;
+    margin-top: 40px;
   }
 
   .insights h2 a {
@@ -231,7 +237,7 @@ a {
 
   main {
     margin: 0 auto;
-    width: 200px;
+    padding: 0 10px;
   }
 
   /* Latest news */
@@ -345,6 +351,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
+    margin-left: -84px ;
   }
 
   .indexCo div:nth-child(3) {
@@ -383,10 +390,7 @@ a {
     transform: scaleX(-1);
   }
 
-  .insights li:nth-child(1) h5 {
-    text-align: end;
-  }
-
+  
   .insights li:nth-child(1) {
     background-image: linear-gradient(to bottom, rgb(255, 68, 34, 0.5) 50%, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
   }
@@ -574,12 +578,14 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* max-width: none; 
+    padding: 0; */
   }
 
-  .hidden {
-    display: none;
+  .insights li:nth-child(1) h5 {
+    text-align: end;
   }
-  
+
   .img-background {
     background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
     background-repeat: no-repeat;
@@ -1063,7 +1069,7 @@ a {
   }
 }
 
-@media screen and (max-device-width: 1024px) and (min-device-width: 768px) {
+@media screen and (max-device-width: 1024px) and (min-device-width: 767px) {
   .navbar-mobile ul,
   .second,
   .transform li,
