@@ -711,10 +711,26 @@ a {
     width: 50%;
   }
 
+  .latest-news ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    grid-gap: 10px;
+  }
+
+  .latest-news li span {
+    width: 100%;
+    min-height: 135px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
   .latest-news li {
     display: flex;
     flex-wrap: wrap;
-    width: 22%;
+    width: 100%;
     justify-content: space-between;
   }
 
@@ -737,17 +753,6 @@ a {
 
   .indexCo li {
     width: 24%;
-  }
-
-  .indexCo-headings {
-    display: flex;
-    border: 1px solid;
-  }
-
-  .indexCo h3{
-    align-self: flex-end;
-    border: 1px solid;
-
   }
 
   .indexCo h3 a {
