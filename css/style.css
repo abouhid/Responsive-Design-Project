@@ -116,8 +116,8 @@ a {
   background-repeat: no-repeat;
   background-position: bottom;
   width: 100%;
-  min-height: 276px;
   background-size:cover;
+  min-height: 276px;
 }
 
 .main-articles .main-a-container:nth-child(1) .img-background {
@@ -156,8 +156,8 @@ a {
   background-image: linear-gradient(to bottom, transparent, black), url("../images/img-9.PNG");
 }
 
-#popular {
-  font-size: 1.5em;
+.img-background span {
+  font-size: 14px;
   color: rgb(250, 245, 236);
   padding-left: 1em;
 }
@@ -178,7 +178,6 @@ a {
   text-decoration: none;
   color: white;
   margin-left: 1em;
-  display: block;
 }
 
 .text-bold:hover {
@@ -186,7 +185,7 @@ a {
 }
 
 .img-background span {
-  padding-top: 30%;
+  padding-top: 40%;
   display: block;
   color: white;
 }
@@ -215,8 +214,8 @@ a {
 }
 
 .thumbnail {
-  width: 97px;
-  height: 97px;
+  min-width: 97px;
+  min-height: 97px;
   padding-left: 10px;
 }
 
@@ -1215,4 +1214,3 @@ footer {
 .footer-img {
   width: 3em;
 }
-
