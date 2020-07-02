@@ -516,6 +516,7 @@ a {
   }
 
   .insights li:nth-child(1) {
+    grid-area: a;
     background-image: linear-gradient(to bottom, rgb(255, 68, 34, 0.5) 50%, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
   }
 
@@ -930,6 +931,14 @@ a {
     height: 43px;
     display: flex;
   }
+
+  .indexCo h4 a{
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+
 
   .indexCo h4 img {
     width: 60px;
