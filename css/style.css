@@ -97,7 +97,8 @@ a {
   font-weight: 600;
   text-decoration: none;
   color: white;
-  margin-left: 1em;
+  padding-left: 1em;
+  display: block;
 }
 
 .text-bold:hover {
@@ -443,7 +444,7 @@ a {
     padding: 16px;
   }
   .indexCo div:nth-child(3) span {
-    font-size: 13px;
+    font-size: 12px;
     color: #555555;
     margin-left: 5px;
   }
