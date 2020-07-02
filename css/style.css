@@ -186,6 +186,7 @@ a {
     display: flex;
     flex-direction: column;
     padding: 8px;
+    margin-top: 106px;
   }
 
   .insights li {
@@ -197,6 +198,9 @@ a {
     min-height: 30vh;
   }
 
+  .insights li img {
+    display: none;
+  }
   .index-img a {
     width: 60px;
     height: 60px;
@@ -660,7 +664,7 @@ a {
     align-items: center;
     margin-bottom: 1px;
     position: sticky;
-
+    margin: 0;
   }
 
   .insights {
@@ -669,6 +673,7 @@ a {
     grid-template-areas: "a b""a c";
     grid-gap: 5px;
     width: 100%;
+    margin: 0;
   }
 
   .insights li {
