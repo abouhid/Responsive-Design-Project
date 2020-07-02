@@ -105,6 +105,7 @@ ul {
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 .indexCo li:last-child {
@@ -268,7 +269,7 @@ a {
   main {
     display: flex;
     flex-direction: column;
-    padding: 0 4em;
+    align-items: center;
   }
 
   .black-navbar {
@@ -363,7 +364,7 @@ a {
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "a b""a c";
     grid-gap: 5px;
-    margin: 0 -3.5em;
+    width: 100%;
   }
 
   .insights li {
@@ -423,10 +424,21 @@ a {
   /* Desktop Latest news */
   .latest-news h2 {
     margin: 20px auto;
+   
   }
 
   .latest-news h2 a {
     font-size: 28px;
+    color: #f42;
+  }
+
+  .latest-news h2 a:hover,
+  .latest-news h2 a:nth-child(2):hover {
+    color: black;
+  }
+
+  .latest-news h2 a:nth-child(2) {
+    font-size: 16px;
     color: #f42;
   }
 
@@ -438,6 +450,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .latest-news li {
@@ -447,6 +461,7 @@ a {
     width: 30%;
     align-items: center;
     margin-right: 10px;
+    max-width: 270px;
   }
 
   .latest-news li span {
@@ -542,6 +557,7 @@ a {
   .indexCo li {
     margin: 20px 10px 20px 0;
     display: block;
+    max-width: 272px;
   }
 
   .indexCo h4 {
@@ -721,6 +737,22 @@ a {
 
   .indexCo li {
     width: 24%;
+  }
+
+  .indexCo-headings {
+    display: flex;
+    border: 1px solid;
+  }
+
+  .indexCo h3{
+    align-self: flex-end;
+    border: 1px solid;
+
+  }
+
+  .indexCo h3 a {
+    font-size: 14px;
+    color: #f42;
   }
 
   .main-articles {
