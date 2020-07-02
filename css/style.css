@@ -1121,6 +1121,7 @@ a {
   .insights li img {
     width: 50%;
     margin-bottom: 100px;
+    display: block;
   }
 
   .latest-news ul {
