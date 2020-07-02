@@ -108,10 +108,6 @@ a {
   cursor: pointer;
 }
 
-.indexCo li:last-child {
-  display: block;
-}
-
 .hidden {
   display: none;
 }
@@ -167,7 +163,6 @@ a {
   padding-left: 1em;
   padding-top: 40%;
   display: block;
-  color: white;
 }
 
 .author-span {
@@ -211,32 +206,23 @@ a {
   text-decoration: none;
 }
 
+.main-a-list li {
+  margin: 10px auto;
+  border-bottom: 1px solid #aaa;
+  line-height: 1em;
+  padding-bottom: 10px;
+}
+
 .main-a-list li > a {
   text-decoration: none;
   color: #555;
   font-size: 1em;
 }
 
-.text-thumbnail a:nth-child(1) {
-  padding: 20px;
-  font-weight: bold;
-}
-
 .thumbnail {
   min-width: 97px;
   min-height: 97px;
   padding-left: 10px;
-}
-
-.main-a-list li > a:hover {
-  color: black;
-}
-
-.main-a-list li {
-  margin: 10px auto;
-  border-bottom: 1px solid #aaa;
-  line-height: 1em;
-  padding-bottom: 10px;
 }
 
 .main-a-list {
@@ -267,6 +253,14 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .index-img a {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    display: block;
+    position: relative;
   }
 
   .black-navbar {
@@ -324,27 +318,6 @@ a {
     margin-right: 20px;
   }
 
-  .transform li:nth-child(3) {
-    color: #555;
-    font-size: 12px;
-  }
-
-  .transform li:nth-child(4) a {
-    color: #f42;
-    font-size: 20px;
-  }
-
-  .transform li:nth-child(5) a {
-    background-color: #0cc;
-    border-radius: 2px;
-    line-height: 28px;
-    padding: 8px 12px;
-    font-size: 11px;
-    color: white;
-    margin: 0 10px;
-    font-weight: bold;
-  }
-
   .spacer {
     height: 30px;
     font-size: 14px;
@@ -371,23 +344,6 @@ a {
     padding: 10px;
   }
 
-  .insights li:nth-child(1) {
-    grid-area: a;
-    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
-    display: flex;
-    flex-direction: column;
-  }
-
-  .insights li:nth-child(2) {
-    grid-area: b;
-    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/cc_series_empty-1200x628.jpg);
-  }
-
-  .insights li:nth-child(3) {
-    grid-area: c;
-    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
-  }
-
   .insights h5 a {
     color: white;
   }
@@ -395,10 +351,6 @@ a {
   .insights h2 a {
     color: white;
     font-size: 20px;
-  }
-
-  .insights li:nth-child(1) h2 a {
-    font-size: 40px;
   }
 
   .insights p a,
@@ -425,16 +377,6 @@ a {
 
   .latest-news h2 a {
     font-size: 28px;
-    color: #f42;
-  }
-
-  .latest-news h2 a:hover,
-  .latest-news h2 a:nth-child(2):hover {
-    color: black;
-  }
-
-  .latest-news h2 a:nth-child(2) {
-    font-size: 16px;
     color: #f42;
   }
 
@@ -469,38 +411,6 @@ a {
     background-size: 100%;
   }
 
-  .latest-news li:nth-child(1) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
-  }
-
-  .latest-news li:nth-child(2) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Screenshot-2020-05-29-at-12.00.49-412x270.png);
-  }
-
-  .latest-news li:nth-child(3) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png);
-  }
-
-  .latest-news li:nth-child(4) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg);
-  }
-
-  .latest-news li:nth-child(5) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg);
-  }
-
-  .latest-news li:nth-child(6) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png);
-  }
-
-  .latest-news li:nth-child(7) span {
-    background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg);
-  }
-
-  .latest-news li:nth-child(8) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
-  }
-
   .latest-news li div {
     font-size: 14px;
   }
@@ -528,14 +438,6 @@ a {
   .indexCo h3 a {
     font-size: 14px;
     color: #f42;
-  }
-
-  .index-img a {
-    width: 60px;
-    height: 60px;
-    background-color: blue;
-    display: block;
-    position: relative;
   }
 
   .index-img {
@@ -575,17 +477,97 @@ a {
     color: white;
   }
 
-  .indexCo div:nth-child(2) {
-    color: #000;
-    background: rgba(255, 68, 34, 0.08);
-    padding: 10px 16px 10px 84px;
-  }
-
   .indexCo h6 {
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.04em;
     line-height: 1.5;
+  }
+
+  .border-right {
+    border-right: 1px solid #f42;
+    padding-right: 20px;
+  }
+
+  .latest-news h2 a:nth-child(2) {
+    font-size: 16px;
+    color: #f42;
+  }
+
+  .transform li:nth-child(3) {
+    color: #555;
+    font-size: 12px;
+  }
+
+  .transform li:nth-child(4) a {
+    color: #f42;
+    font-size: 20px;
+  }
+
+  .transform li:nth-child(5) a {
+    background-color: #0cc;
+    border-radius: 2px;
+    line-height: 28px;
+    padding: 8px 12px;
+    font-size: 11px;
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+
+  .insights li:nth-child(1) {
+    grid-area: a;
+    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .insights li:nth-child(2) {
+    grid-area: b;
+    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/cc_series_empty-1200x628.jpg);
+  }
+
+  .insights li:nth-child(3) {
+    grid-area: c;
+    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
+  }
+
+  .latest-news li:nth-child(1) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
+  }
+
+  .latest-news li:nth-child(2) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Screenshot-2020-05-29-at-12.00.49-412x270.png);
+  }
+
+  .latest-news li:nth-child(3) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png);
+  }
+
+  .latest-news li:nth-child(4) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg);
+  }
+
+  .latest-news li:nth-child(5) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg);
+  }
+
+  .latest-news li:nth-child(6) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png);
+  }
+
+  .latest-news li:nth-child(7) span {
+    background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg);
+  }
+
+  .latest-news li:nth-child(8) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
+  }
+
+  .indexCo div:nth-child(2) {
+    color: #000;
+    background: rgba(255, 68, 34, 0.08);
+    padding: 10px 16px 10px 84px;
   }
 
   .indexCo div:nth-child(3) {
@@ -611,9 +593,16 @@ a {
     color: #cab5b5;
   }
 
-  .border-right {
-    border-right: 1px solid #f42;
-    padding-right: 20px;
+  .latest-news h2 a:hover {
+    color: black;
+  }
+
+  .insights li:nth-child(1) h2 a {
+    font-size: 40px;
+
+    .latest-news h2 a:nth-child(2):hover {
+      color: black;
+    }
   }
 }
 
@@ -621,9 +610,7 @@ a {
   .navbar-mobile ul,
   .second,
   .transform li,
-  .insights li img,
-  .insights h5,
-  .indexCo ul li:last-child {
+  .insights h5 {
     display: none;
   }
 
@@ -659,7 +646,6 @@ a {
   .navbar-mobile a {
     width: 106px;
     height: 80px;
-    background-color: #f42;
     background: linear-gradient(to bottom right, #c09, #f42 85%);
     display: flex;
     justify-content: center;
@@ -673,13 +659,15 @@ a {
     width: 66px;
   }
 
+  .insights li img {
+    display: none;
+  }
+
   .transform li:nth-child(1) {
     display: block;
   }
-}
 
-@media screen and (max-device-width: 1214px) {
-  .white-navbar ul:first-child li:last-child {
+  .indexCo ul li:last-child {
     display: none;
   }
 }
@@ -692,14 +680,6 @@ a {
 
   .navbar-mobile {
     display: none;
-  }
-
-  .insights li:nth-child(1) h5 {
-    text-align: end;
-  }
-
-  .insights li:nth-child(1) {
-    background-image: linear-gradient(to bottom, rgb(255, 68, 34, 0.5) 50%, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
   }
 
   .insights li img {
@@ -743,10 +723,6 @@ a {
     padding: 0;
   }
 
-  .indexCo li:last-child {
-    display: block;
-  }
-
   .indexCo li {
     width: 24%;
   }
@@ -786,7 +762,6 @@ a {
   .navbar-mobile a {
     width: 106px;
     height: 100%;
-    background-color: #f42;
     background: linear-gradient(to bottom right, #c09, #f42 85%);
     display: flex;
     justify-content: center;
@@ -812,16 +787,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .navbar-mobile ul li:nth-child(1) i {
-    color: rgba(80, 80, 80, 0.3);
-    transform: scaleX(-1);
-  }
-
-  .navbar-mobile ul li:nth-child(2) {
-    color: #f42;
-    font-size: 20px;
   }
 
   .spacer {
@@ -857,16 +822,12 @@ a {
     min-height: 30vh;
   }
 
-  .insights li:nth-child(1) {
-    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
-  }
-
-  .insights li:nth-child(2) {
-    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/cc_series_empty-1200x628.jpg);
-  }
-
-  .insights li:nth-child(3) {
-    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
+  .index-img a {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    display: block;
+    position: relative;
   }
 
   .insights h5 a {
@@ -920,38 +881,6 @@ a {
     background-size: cover;
   }
 
-  .latest-news li:nth-child(1) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
-  }
-
-  .latest-news li:nth-child(2) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Screenshot-2020-05-29-at-12.00.49-412x270.png);
-  }
-
-  .latest-news li:nth-child(3) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png);
-  }
-
-  .latest-news li:nth-child(4) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg);
-  }
-
-  .latest-news li:nth-child(5) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg);
-  }
-
-  .latest-news li:nth-child(6) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png);
-  }
-
-  .latest-news li:nth-child(7) span {
-    background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg);
-  }
-
-  .latest-news li:nth-child(8) span {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
-  }
-
   .latest-news li div {
     font-size: 14px;
     margin-left: 15px;
@@ -981,14 +910,6 @@ a {
   .indexCo h3 a {
     font-size: 14px;
     color: #f42;
-  }
-
-  .index-img a {
-    width: 60px;
-    height: 60px;
-    background-color: blue;
-    display: block;
-    position: relative;
   }
 
   .index-img {
@@ -1024,17 +945,22 @@ a {
     margin-top: 10px;
   }
 
-  .indexCo div:nth-child(2) {
-    color: #000;
-    background: rgba(255, 68, 34, 0.08);
-    padding: 10px 16px 10px 84px;
-  }
-
   .indexCo h6 {
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.04em;
     line-height: 1.5;
+  }
+
+  .main-a-container {
+    min-width: fit-content;
+  }
+
+  #index-rigth {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
   }
 
   .indexCo div:nth-child(3) {
@@ -1060,15 +986,72 @@ a {
     color: #555;
   }
 
-  .main-a-container {
-    min-width: fit-content;
+  .insights li:nth-child(2) {
+    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/cc_series_empty-1200x628.jpg);
   }
 
-  #index-rigth {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
+  .insights li:nth-child(3) {
+    background-image: linear-gradient(to bottom, transparent, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-796x417.png);
+  }
+
+  .navbar-mobile ul li:nth-child(1) i {
+    color: rgba(80, 80, 80, 0.3);
+    transform: scaleX(-1);
+  }
+
+  .insights li:nth-child(1) h5 {
+    text-align: end;
+  }
+
+  .insights li:nth-child(1) {
+    background-image: linear-gradient(to bottom, rgb(255, 68, 34, 0.5) 50%, black), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/handshake-3962172_960_720-796x531.jpg);
+  }
+
+  .latest-news li:nth-child(1) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/header-image-samsungs-galaxy-watch-3-516x270.png);
+  }
+
+  .latest-news li:nth-child(2) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Screenshot-2020-05-29-at-12.00.49-412x270.png);
+  }
+
+  .indexCo li:last-child {
+    display: block;
+  }
+
+  .navbar-mobile ul li:nth-child(2) {
+    color: #f42;
+    font-size: 20px;
+  }
+
+  .latest-news li:nth-child(3) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-88-516x270.png);
+  }
+
+  .latest-news li:nth-child(4) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/sale_29686_primary_image_wide-540x270.jpg);
+  }
+
+  .latest-news li:nth-child(5) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/google-photos-whatsapp-backup-516x270.jpg);
+  }
+
+  .latest-news li:nth-child(6) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-9-516x270.png);
+  }
+
+  .latest-news li:nth-child(7) span {
+    background-image: url(https://i.ytimg.com/vi/kMpqVfnuyII/hqdefault.jpg);
+  }
+
+  .latest-news li:nth-child(8) span {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
+  }
+
+  .indexCo div:nth-child(2) {
+    color: #000;
+    background: rgba(255, 68, 34, 0.08);
+    padding: 10px 16px 10px 84px;
   }
 }
 
@@ -1169,6 +1152,12 @@ a {
   }
 }
 
+@media screen and (max-device-width: 1214px) {
+  .white-navbar ul:first-child li:last-child {
+    display: none;
+  }
+}
+
 footer {
   text-align: center;
   font-size: 100%;
@@ -1210,11 +1199,6 @@ footer {
   align-items: center;
 }
 
-.icons-container li:hover {
-  background: transparent;
-  border: 3px solid #333;
-}
-
 .icons-container i {
   color: white;
   font-size: 20px;
@@ -1254,4 +1238,22 @@ footer {
   background-color: #146ff8;
   color: white;
   padding: 4px;
+}
+
+.indexCo li:last-child {
+  display: block;
+}
+
+.text-thumbnail a:nth-child(1) {
+  padding: 20px;
+  font-weight: bold;
+}
+
+.icons-container li:hover {
+  background: transparent;
+  border: 3px solid #333;
+}
+
+.main-a-list li > a:hover {
+  color: black;
 }
