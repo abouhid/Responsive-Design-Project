@@ -821,9 +821,7 @@ a {
   }
 
   /* Desktop Latest news */
-  .latest-news h2 {
-    margin: 20px auto;
-  }
+
 
   .news-ul div {
     padding: 3% 5%;
@@ -1173,7 +1171,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 800px;
   }
   .index-right{
     display: flex;
@@ -1183,9 +1180,6 @@ a {
     width: 330px;
     padding: 0;
     margin: 0;    
-  }
-  .latest-news h2 {
-    margin: 20px auto;
   }
 
   .news-ul div {
