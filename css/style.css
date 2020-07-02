@@ -284,6 +284,8 @@ a {
 
   .indexCo h3 {
     margin-top: 10px;
+    width: fit-content;
+    height: fit-content;
   }
 
   .indexCo h3 a {
@@ -341,12 +343,11 @@ a {
     min-width: fit-content;
   }
 
-  #index-rigth {
+  .index-right {
     background-color: white;
     display: flex;
+
     flex-direction: column;
-    margin-bottom: 1em;
-    margin-left: -84px ;
   }
 
   .indexCo div:nth-child(3) {
@@ -431,11 +432,7 @@ a {
     background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
   }
 
-  .indexCo div:nth-child(2) {
-    color: #000;
-    background: rgba(255, 68, 34, 0.08);
-    padding: 10px 16px 10px 84px;
-  }
+ 
 /* } */
 .img-background {
   background-image: linear-gradient(to bottom, transparent, black), url("../images/Frankestein.PNG");
@@ -706,17 +703,6 @@ a {
     margin-left: 0;
   }
   
-  #index-rigth {
-    display: flex;
-    background-color: white;
-    justify-content: space-evenly;
-    width: 400px;
-    padding: 0;
-    color: #f42;
-  }
-
-
-
   .index-img a {
     width: 60px;
     height: 60px;
@@ -889,15 +875,6 @@ a {
     color: #f42;
   }
 
-  .indexCo h3 {
-    margin-top: 10px;
-  }
-
-  .indexCo h3 a {
-    font-size: 14px;
-    color: #f42;
-  }
-
   .index-img {
     width: 60px;
     height: 60px;
@@ -1020,7 +997,7 @@ a {
     background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/data-customer-strategy-gq-516x270.png);
   }
 
-  .indexCo div:nth-child(2) {
+  .series {
     color: #000;
     background: rgba(255, 68, 34, 0.08);
     padding: 10px 16px 10px 84px;
@@ -1163,33 +1140,24 @@ a {
     justify-content: space-between;
   }
 
-  .index-header {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .ind-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
-  #index-rigth {
+  .index-right{
     display: flex;
+    flex-direction: row;
     background-color: white;
     justify-content: space-evenly;
     width: 400px;
     padding: 0;
+    margin: 0;    
   }
-
   .indexCo li {
     width: 24%;
   }
 
-  .indexCo h3 a {
-    font-size: 14px;
-    color: #f42;
-  }
 
   .main-articles {
     display: grid;
@@ -1207,7 +1175,15 @@ a {
     align-items: center;
     max-width: 800px;
   }
-
+  .index-right{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-evenly;
+    width: 330px;
+    padding: 0;
+    margin: 0;    
+  }
   .latest-news h2 {
     margin: 20px auto;
   }
@@ -1292,13 +1268,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  #index-rigth {
-    display: flex;
-    background-color: white;
-    justify-content: space-evenly;
-    width: 400px;
-    padding: 0;
-  }
+  
 }
 
 @media screen and (max-device-width: 1214px) {
