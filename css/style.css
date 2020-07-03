@@ -464,13 +464,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* max-width: none;
-    padding: 0; */
-  }
-
-  .insights li:nth-child(1) h5 {
-    text-align: end;
   }
 
   .img-background {
@@ -777,11 +770,6 @@ main {
     padding-right: 20px;
   }
 
-  .latest-news h2 a:nth-child(2) {
-    font-size: 16px;
-    color: #f42;
-  }
-
   .transform li:nth-child(3) {
     color: #555;
     font-size: 12px;
@@ -981,6 +969,12 @@ main {
 
   .insights {
     margin-top: 106px;
+  }
+
+  .insights li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .insights li img {
@@ -1319,6 +1313,11 @@ footer {
 .navbar-mobile ul li:nth-child(2) {
   color: #f42;
   font-size: 20px;
+}
+
+.latest-news h2 a:nth-child(2) {
+  font-size: 16px;
+  color: #f42;
 }
 
 .latest-news li:nth-child(3) span {
