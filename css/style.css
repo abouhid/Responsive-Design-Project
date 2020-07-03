@@ -207,6 +207,10 @@ header {
   position: relative;
 }
 
+.title{
+  margin-bottom: 10px;
+}
+
 .title a {
   text-decoration: none;
   font-size: 2em;
@@ -405,6 +409,12 @@ main {
   margin-top: 10px;
   color: rgb(80, 80, 80);
   font-size: 12px;
+}
+
+.latest-news h2 {
+  font-size: 28px;
+  color: #f42;
+  margin-bottom: 10px;
 }
 
 .latest-news h2 a {
@@ -659,8 +669,10 @@ main {
     margin: 0.5em;
   }
 
-  .news-ul div {
-    padding: 3% 5%;
+  .latest-news li div {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 0;
   }
 
   .latest-news ul {
@@ -686,10 +698,6 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-  }
-
-  .latest-news li div {
-    font-size: 14px;
   }
 
   .latest-news p,
@@ -983,10 +991,6 @@ main {
     margin: 0;
   }
 
-  .news-ul div {
-    padding: 3% 5%;
-  }
-
   .latest-news ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1016,6 +1020,7 @@ main {
 
   .latest-news li div {
     font-size: 14px;
+    margin-left: 0;
   }
 
   .latest-news p,
