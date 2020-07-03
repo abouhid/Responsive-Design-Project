@@ -110,8 +110,6 @@ a {
   display: none;
 }
 
-
-
 .black-navbar,
 .white-navbar {
   display: none;
@@ -448,7 +446,6 @@ main {
   width: 1em;
   margin-left: 0;
 }
-
 
 @media screen and (min-device-width: 767px) and (max-device-width: 20000px) {
   main {
