@@ -1091,6 +1091,10 @@ main {
     display: none;
   }
 
+  .first {
+    width: 100%;
+  }
+
   .insights li img {
     width: 50%;
     margin-bottom: 100px;
@@ -1118,6 +1122,7 @@ main {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    max-width: 270px;
   }
 
   .ind-header {
